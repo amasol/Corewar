@@ -1,23 +1,11 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: amasol <marvin@42.fr>                      +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2018/10/17 19:09:46 by amasol            #+#    #+#              #
-#    Updated: 2018/10/26 21:46:42 by amasol           ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
-PHONY: all clean fclean
+.PHONY: all clean fclean
 
 NAME = corewar
 CC=clang
-CFLAGS = -Wall -Wextra -Werror -Iinclude -Ilibft
+#CFLAGS = -Wall -Wextra -Werror -Iinclude -Ilibft
 LIBFT = libft/libft.a
 
-SRC = main.c
+SRC = main.c error.c
 OBJ = $(SRC:.c=.o)
 
 OBJDIR=obj

@@ -63,7 +63,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/corewar.dir/libft/ft_tolower.c.o"
   "CMakeFiles/corewar.dir/libft/ft_toupper.c.o"
   "CMakeFiles/corewar.dir/libft/get_next_line.c.o"
-  "CMakeFiles/corewar.dir/main.c.o"
+  "CMakeFiles/corewar.dir/src/main.c.o"
+  "CMakeFiles/corewar.dir/src/error.c.o"
   "corewar.pdb"
   "corewar"
 )

@@ -6,7 +6,10 @@ AUX_SOURCE_DIRECTORY(libft LIBA)
 
 add_executable(corewar
         ${LIBA}
-        corewar.h
-        main.c)
+        include/corewar.h
+        libft/libft.h
+        include/op.h
+        src/main.c
+        src/error.c)
 
 link_libraries(libft/libftprintf.a)

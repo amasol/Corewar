@@ -1851,32 +1851,59 @@ libft/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/libft/get_next_line.c.s
 .PHONY : libft/get_next_line.c.s
 
-main.o: main.c.o
+src/error.o: src/error.c.o
 
-.PHONY : main.o
+.PHONY : src/error.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/main.c.o
-.PHONY : main.c.o
+src/error.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/error.c.o
+.PHONY : src/error.c.o
 
-main.i: main.c.i
+src/error.i: src/error.c.i
 
-.PHONY : main.i
+.PHONY : src/error.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/main.c.i
-.PHONY : main.c.i
+src/error.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/error.c.i
+.PHONY : src/error.c.i
 
-main.s: main.c.s
+src/error.s: src/error.c.s
 
-.PHONY : main.s
+.PHONY : src/error.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/main.c.s
-.PHONY : main.c.s
+src/error.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/error.c.s
+.PHONY : src/error.c.s
+
+src/main.o: src/main.c.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/main.c.o
+.PHONY : src/main.c.o
+
+src/main.i: src/main.c.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/main.c.i
+.PHONY : src/main.c.i
+
+src/main.s: src/main.c.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/main.c.s
+.PHONY : src/main.c.s
 
 # Help Target
 help:
@@ -2079,9 +2106,12 @@ help:
 	@echo "... libft/get_next_line.o"
 	@echo "... libft/get_next_line.i"
 	@echo "... libft/get_next_line.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/error.o"
+	@echo "... src/error.i"
+	@echo "... src/error.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

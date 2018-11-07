@@ -14,11 +14,11 @@
 
 long int		ft_atoi(const char *str)
 {
-	char				*s;
+	unsigned char		*s;
 	int					nom;
 	int					negativ;
 
-	s = (char *)str;
+	s = (unsigned char *)str;
 	nom = 0;
 	negativ = 1;
 	while (ft_isspace(*s))

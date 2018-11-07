@@ -80,7 +80,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/amasol/amasol/project/corewar/corewar.h">
+		<Unit filename="/Users/amasol/amasol/project/corewar/include/corewar.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/include/op.h">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/amasol/amasol/project/corewar/libft/ft_above_zero.c">
@@ -278,7 +281,13 @@
 		<Unit filename="/Users/amasol/amasol/project/corewar/libft/get_next_line.h">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/Users/amasol/amasol/project/corewar/main.c">
+		<Unit filename="/Users/amasol/amasol/project/corewar/libft/libft.h">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/error.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/main.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/amasol/amasol/project/corewar/CMakeLists.txt">
