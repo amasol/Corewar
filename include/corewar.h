@@ -32,8 +32,10 @@ typedef struct		s_val
 	unsigned char 			b_size[4];
 	unsigned char 			b_comment[2048];
 	unsigned char 			n_null_two[4];
-	int						b_size_int;
-//	unsigned char 			executable_code[//перевести в 10- код, тут будет наж b_size];
+	size_t					b_size_int;
+	unsigned char 			*executable_code;
+
+
 	int				fd;
 }					t_val;
 
@@ -44,6 +46,6 @@ typedef struct		s_val
 int					main(void);
 void				error(void);
 void				s_file();
-int					ft_atoi_base(unsigned char *nb, int base);
+size_t				shift_bit(unsigned char tmp, unsigned char tmp1);
 
 #endif

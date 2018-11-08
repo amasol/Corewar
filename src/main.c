@@ -15,9 +15,8 @@
 void		s_file()
 {
 	t_val	vl;
-//	unsigned char	tmp[1];
-//	char 	tmp2[129];
 	int		i;
+
 
 	i = 0;
 	vl.fd = open("Gagnant.cor", O_RDONLY);
@@ -28,12 +27,20 @@ void		s_file()
 		error();
 	if (read(vl.fd, vl.n_null, 4) != 4)
 		error();
+
+
 	if (read(vl.fd, vl.b_size, 4) != 4)
 		error();
-
+	else
+		vl.b_size_int = shift_bit(vl.b_size[2], vl.b_size[3]);
 	if (read(vl.fd, vl.b_comment, COMMENT_LENGTH) != COMMENT_LENGTH)
 		error();
 	if (read(vl.fd, vl.n_null_two, 4) != 4)
+		error();
+
+	vl.executable_code = malloc(sizeof(vl.b_size_int));
+
+	if (read(vl.fd, vl.executable_code, vl.b_size_int) != vl.b_size_int)
 		error();
 
 
@@ -50,7 +57,7 @@ void		s_file()
 	printf("\n");
 	i = 0;
 	while (i < 4)
-		printf("%d", vl.b_size[i++]);
+		printf("%x", vl.b_size[i++]);
 	printf("\n");
 	i = 0;
 	while (i < COMMENT_LENGTH)
@@ -59,8 +66,10 @@ void		s_file()
 	i = 0;
 	while (i < 4)
 		printf("%x", vl.n_null_two[i++]);
-
-
+	printf("\n");
+	i = 0;
+	while (i < vl.b_size_int)
+		printf("%x", vl.executable_code[i++]);
 }
 
 

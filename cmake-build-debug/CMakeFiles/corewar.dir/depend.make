@@ -239,9 +239,21 @@ CMakeFiles/corewar.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
 CMakeFiles/corewar.dir/libft/get_next_line.c.o: ../libft/get_next_line.h
 CMakeFiles/corewar.dir/libft/get_next_line.c.o: ../libft/libft.h
 
+CMakeFiles/corewar.dir/src/error.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/error.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/error.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/error.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/error.c.o: ../src/error.c
+
 CMakeFiles/corewar.dir/src/main.c.o: ../include/corewar.h
 CMakeFiles/corewar.dir/src/main.c.o: ../include/op.h
 CMakeFiles/corewar.dir/src/main.c.o: ../libft/get_next_line.h
 CMakeFiles/corewar.dir/src/main.c.o: ../libft/libft.h
 CMakeFiles/corewar.dir/src/main.c.o: ../src/main.c
+
+CMakeFiles/corewar.dir/src/shift_bit.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/shift_bit.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/shift_bit.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/shift_bit.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/shift_bit.c.o: ../src/shift_bit.c
 

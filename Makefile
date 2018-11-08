@@ -5,7 +5,7 @@ CC=clang
 #CFLAGS = -Wall -Wextra -Werror -Iinclude -Ilibft
 LIBFT = libft/libft.a
 
-SRC = main.c error.c
+SRC = main.c error.c shift_bit.c
 OBJ = $(SRC:.c=.o)
 
 OBJDIR=obj

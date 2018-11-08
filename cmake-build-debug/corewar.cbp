@@ -290,6 +290,9 @@
 		<Unit filename="/Users/amasol/amasol/project/corewar/src/main.c">
 			<Option target="corewar"/>
 		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/shift_bit.c">
+			<Option target="corewar"/>
+		</Unit>
 		<Unit filename="/Users/amasol/amasol/project/corewar/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -1905,6 +1905,33 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/shift_bit.o: src/shift_bit.c.o
+
+.PHONY : src/shift_bit.o
+
+# target to build an object file
+src/shift_bit.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/shift_bit.c.o
+.PHONY : src/shift_bit.c.o
+
+src/shift_bit.i: src/shift_bit.c.i
+
+.PHONY : src/shift_bit.i
+
+# target to preprocess a source file
+src/shift_bit.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/shift_bit.c.i
+.PHONY : src/shift_bit.c.i
+
+src/shift_bit.s: src/shift_bit.c.s
+
+.PHONY : src/shift_bit.s
+
+# target to generate assembly for a file
+src/shift_bit.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/shift_bit.c.s
+.PHONY : src/shift_bit.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2112,6 +2139,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/shift_bit.o"
+	@echo "... src/shift_bit.i"
+	@echo "... src/shift_bit.s"
 .PHONY : help
 
 
