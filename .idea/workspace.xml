@@ -86,7 +86,7 @@
             <entry file="file://$PROJECT_DIR$/src/main.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="694">
-                  <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+                  <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -108,7 +108,7 @@
             <entry file="file://$PROJECT_DIR$/include/corewar.h">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="755">
-                  <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+                  <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
                   <folding>
                     <element signature="e#930#958#0" expanded="true" />
                   </folding>
@@ -120,7 +120,7 @@
             <entry file="file://$PROJECT_DIR$/src/shift_bit.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="598">
-                  <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+                  <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -259,16 +259,15 @@
       <workItem from="1541593061237" duration="335000" />
       <workItem from="1541603060766" duration="1998000" />
       <workItem from="1541679884305" duration="8731000" />
-      <workItem from="1541758738944" duration="1830000" />
+      <workItem from="1541758738944" duration="1950000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38964000" />
+    <option name="totallyTimeSpent" value="39084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16441621" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -282,7 +281,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32931423" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32931423" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32931423" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="CMake" order="12" />
@@ -404,7 +403,7 @@
     <entry file="file://$PROJECT_DIR$/src/shift_bit.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -418,7 +417,7 @@
     <entry file="file://$PROJECT_DIR$/include/corewar.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="755">
-          <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
           <folding>
             <element signature="e#930#958#0" expanded="true" />
           </folding>
@@ -428,7 +427,7 @@
     <entry file="file://$PROJECT_DIR$/src/main.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="694">
-          <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+          <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
         </state>
       </provider>
     </entry>
