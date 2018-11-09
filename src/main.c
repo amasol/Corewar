@@ -46,7 +46,7 @@ void			s_file()
 	vl = vl->next;
 	free(vl);
 	free(tmp);
-
+/*
 	while (i < 4)
 		printf("%x", tmp->m_header[i++]);
 	i = 0;
@@ -75,13 +75,15 @@ void			s_file()
 		printf("%x", tmp->executable_code[i++]);
 	printf("\n");
 
-
-//	clear_vl(tmp);
+*/
 }
 
 int			main(void)
 {
 	s_file();
+
+
+
 	system("leaks corewar");
 	return (0);
 }
