@@ -34,9 +34,8 @@ typedef struct		s_val
 	unsigned char 			n_null_two[4];
 	size_t					b_size_int;
 	unsigned char 			*executable_code;
-
-
-	int				fd;
+	int						fd;
+	struct	s_val			*next;
 }					t_val;
 
 
