@@ -34,8 +34,7 @@ char			**ft_strsplit(char const *s, char c)
 	size_t	j;
 	size_t	k;
 
-	if (!s || !(str = (char **)malloc(sizeof(*str) *
-		(ft_score(s, c) + 1))))
+	if (!s || !(str = (char **)malloc(sizeof(*str) * (ft_score(s, c) + 1))))
 		return (NULL);
 	i = -1;
 	j = 0;

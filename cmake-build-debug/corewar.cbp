@@ -287,7 +287,16 @@
 		<Unit filename="/Users/amasol/amasol/project/corewar/src/error.c">
 			<Option target="corewar"/>
 		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_sti.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/function_check.c">
+			<Option target="corewar"/>
+		</Unit>
 		<Unit filename="/Users/amasol/amasol/project/corewar/src/main.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/save_bot.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/amasol/amasol/project/corewar/src/shift_bit.c">

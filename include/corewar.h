@@ -17,15 +17,22 @@
 # include "op.h"
 
 # include <stdio.h>
+
+typedef unsigned char	t_arr __attribute__((vector_size(sizeof(unsigned char) * 3)));
+
+
 //# include <math.h>
 
 //# define BUFF_S 10000
 
+
+
 /*
-** Валидация
+** Validation
  */
 typedef struct		s_val
 {
+//	int						id;
 	unsigned char 			m_header[4];
 	unsigned char 			bot_name[PROG_NAME_LENGTH];
 	unsigned char 			n_null[4];
@@ -38,13 +45,40 @@ typedef struct		s_val
 	struct	s_val			*next;
 }					t_val;
 
-
-
+typedef struct		c_carriage
+{
+	unsigned char	register_id[16];
+	int				position;
+	int				carry;
+	int				player_id;			// номер игрока который его породил.
+	int				alive;				// живой или неи 0 || 1.
+	int				execution_team;		// команду которую он исполняет.
+	int				number_cycle;					// кол-во циклов, сколько ему осталось ждать до исполнения команды.
+}					t_carriage;
 
 
 int					main(void);
+t_val				*s_file();
+
+void				processing_function(t_val *bot);
+
+
+/*
+** Error validation
+ */
 void				error(void);
-void				s_file();
+
+
+
 size_t				shift_bit(unsigned char tmp, unsigned char tmp1);
+
+/*
+** Virtual machine
+ */
+void				ft_sti(unsigned char *codage);
+t_arr				get_cod(char c);
+
+
+
 
 #endif

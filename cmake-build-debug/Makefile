@@ -1878,6 +1878,60 @@ src/error.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/error.c.s
 .PHONY : src/error.c.s
 
+src/ft_sti.o: src/ft_sti.c.o
+
+.PHONY : src/ft_sti.o
+
+# target to build an object file
+src/ft_sti.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_sti.c.o
+.PHONY : src/ft_sti.c.o
+
+src/ft_sti.i: src/ft_sti.c.i
+
+.PHONY : src/ft_sti.i
+
+# target to preprocess a source file
+src/ft_sti.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_sti.c.i
+.PHONY : src/ft_sti.c.i
+
+src/ft_sti.s: src/ft_sti.c.s
+
+.PHONY : src/ft_sti.s
+
+# target to generate assembly for a file
+src/ft_sti.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_sti.c.s
+.PHONY : src/ft_sti.c.s
+
+src/function_check.o: src/function_check.c.o
+
+.PHONY : src/function_check.o
+
+# target to build an object file
+src/function_check.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/function_check.c.o
+.PHONY : src/function_check.c.o
+
+src/function_check.i: src/function_check.c.i
+
+.PHONY : src/function_check.i
+
+# target to preprocess a source file
+src/function_check.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/function_check.c.i
+.PHONY : src/function_check.c.i
+
+src/function_check.s: src/function_check.c.s
+
+.PHONY : src/function_check.s
+
+# target to generate assembly for a file
+src/function_check.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/function_check.c.s
+.PHONY : src/function_check.c.s
+
 src/main.o: src/main.c.o
 
 .PHONY : src/main.o
@@ -1904,6 +1958,33 @@ src/main.s: src/main.c.s
 src/main.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/main.c.s
 .PHONY : src/main.c.s
+
+src/save_bot.o: src/save_bot.c.o
+
+.PHONY : src/save_bot.o
+
+# target to build an object file
+src/save_bot.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/save_bot.c.o
+.PHONY : src/save_bot.c.o
+
+src/save_bot.i: src/save_bot.c.i
+
+.PHONY : src/save_bot.i
+
+# target to preprocess a source file
+src/save_bot.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/save_bot.c.i
+.PHONY : src/save_bot.c.i
+
+src/save_bot.s: src/save_bot.c.s
+
+.PHONY : src/save_bot.s
+
+# target to generate assembly for a file
+src/save_bot.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/save_bot.c.s
+.PHONY : src/save_bot.c.s
 
 src/shift_bit.o: src/shift_bit.c.o
 
@@ -2136,9 +2217,18 @@ help:
 	@echo "... src/error.o"
 	@echo "... src/error.i"
 	@echo "... src/error.s"
+	@echo "... src/ft_sti.o"
+	@echo "... src/ft_sti.i"
+	@echo "... src/ft_sti.s"
+	@echo "... src/function_check.o"
+	@echo "... src/function_check.i"
+	@echo "... src/function_check.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/save_bot.o"
+	@echo "... src/save_bot.i"
+	@echo "... src/save_bot.s"
 	@echo "... src/shift_bit.o"
 	@echo "... src/shift_bit.i"
 	@echo "... src/shift_bit.s"

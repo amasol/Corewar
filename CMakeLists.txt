@@ -11,6 +11,9 @@ add_executable(corewar
         include/op.h
         src/main.c
         src/error.c
-        src/shift_bit.c)
+        src/shift_bit.c
+        src/save_bot.c
+        src/function_check.c
+        src/ft_sti.c)
 
 link_libraries(libft/libftprintf.a)

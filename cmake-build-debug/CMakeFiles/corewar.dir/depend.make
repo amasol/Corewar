@@ -245,11 +245,29 @@ CMakeFiles/corewar.dir/src/error.c.o: ../libft/get_next_line.h
 CMakeFiles/corewar.dir/src/error.c.o: ../libft/libft.h
 CMakeFiles/corewar.dir/src/error.c.o: ../src/error.c
 
+CMakeFiles/corewar.dir/src/ft_sti.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/ft_sti.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/ft_sti.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/ft_sti.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/ft_sti.c.o: ../src/ft_sti.c
+
+CMakeFiles/corewar.dir/src/function_check.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/function_check.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/function_check.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/function_check.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/function_check.c.o: ../src/function_check.c
+
 CMakeFiles/corewar.dir/src/main.c.o: ../include/corewar.h
 CMakeFiles/corewar.dir/src/main.c.o: ../include/op.h
 CMakeFiles/corewar.dir/src/main.c.o: ../libft/get_next_line.h
 CMakeFiles/corewar.dir/src/main.c.o: ../libft/libft.h
 CMakeFiles/corewar.dir/src/main.c.o: ../src/main.c
+
+CMakeFiles/corewar.dir/src/save_bot.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/save_bot.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/save_bot.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/save_bot.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/save_bot.c.o: ../src/save_bot.c
 
 CMakeFiles/corewar.dir/src/shift_bit.c.o: ../include/corewar.h
 CMakeFiles/corewar.dir/src/shift_bit.c.o: ../include/op.h

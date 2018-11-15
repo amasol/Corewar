@@ -66,6 +66,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/corewar.dir/src/main.c.o"
   "CMakeFiles/corewar.dir/src/error.c.o"
   "CMakeFiles/corewar.dir/src/shift_bit.c.o"
+  "CMakeFiles/corewar.dir/src/save_bot.c.o"
+  "CMakeFiles/corewar.dir/src/function_check.c.o"
+  "CMakeFiles/corewar.dir/src/ft_sti.c.o"
   "corewar.pdb"
   "corewar"
 )
