@@ -26,6 +26,10 @@ typedef unsigned char	t_arr __attribute__((vector_size(sizeof(unsigned char) * 3
 //# define BUFF_S 10000
 
 
+typedef struct		s_op
+{
+}					t_op;
+
 
 /*
 ** Validation

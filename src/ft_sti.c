@@ -12,7 +12,6 @@
 
 #include "../include/corewar.h"
 
-
 t_arr				get_cod(char c)
 {
 	int 	i;
@@ -40,15 +39,20 @@ void				ft_sti(unsigned char *codage)
 
 	 i = 0;
 	cod = get_cod(codage[i]);
-	printf("%d\n", cod[0]);
+
+//	printf("%d\n", cod[0]); // находиться наше кол-во байт
+	printf("%02hhx\n", cod[1]);
 //	printf("%d\n", cod[1]);
 //	printf("%d\n", cod[2]);
+
+//	while (i < 10)
+//		printf("%02hhx ", codage[i++]);
+//	printf("\n");
+
+
 }
 
 
-//while (i < 10)
-//printf("%02hhx ", codage[i++]);
-//	printf("\n");
 
 /*
 void				ft_sti(unsigned char *codage)

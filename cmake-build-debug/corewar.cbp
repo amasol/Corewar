@@ -296,6 +296,9 @@
 		<Unit filename="/Users/amasol/amasol/project/corewar/src/main.c">
 			<Option target="corewar"/>
 		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/op.c">
+			<Option target="corewar"/>
+		</Unit>
 		<Unit filename="/Users/amasol/amasol/project/corewar/src/save_bot.c">
 			<Option target="corewar"/>
 		</Unit>

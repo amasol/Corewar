@@ -1959,6 +1959,33 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/op.o: src/op.c.o
+
+.PHONY : src/op.o
+
+# target to build an object file
+src/op.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/op.c.o
+.PHONY : src/op.c.o
+
+src/op.i: src/op.c.i
+
+.PHONY : src/op.i
+
+# target to preprocess a source file
+src/op.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/op.c.i
+.PHONY : src/op.c.i
+
+src/op.s: src/op.c.s
+
+.PHONY : src/op.s
+
+# target to generate assembly for a file
+src/op.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/op.c.s
+.PHONY : src/op.c.s
+
 src/save_bot.o: src/save_bot.c.o
 
 .PHONY : src/save_bot.o
@@ -2226,6 +2253,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/op.o"
+	@echo "... src/op.i"
+	@echo "... src/op.s"
 	@echo "... src/save_bot.o"
 	@echo "... src/save_bot.i"
 	@echo "... src/save_bot.s"
