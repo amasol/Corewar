@@ -263,6 +263,12 @@ CMakeFiles/corewar.dir/src/main.c.o: ../libft/get_next_line.h
 CMakeFiles/corewar.dir/src/main.c.o: ../libft/libft.h
 CMakeFiles/corewar.dir/src/main.c.o: ../src/main.c
 
+CMakeFiles/corewar.dir/src/op.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/op.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/op.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/op.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/op.c.o: ../src/op.c
+
 CMakeFiles/corewar.dir/src/save_bot.c.o: ../include/corewar.h
 CMakeFiles/corewar.dir/src/save_bot.c.o: ../include/op.h
 CMakeFiles/corewar.dir/src/save_bot.c.o: ../libft/get_next_line.h
