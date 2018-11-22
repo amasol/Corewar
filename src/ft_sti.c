@@ -41,7 +41,7 @@ void				ft_sti(unsigned char *codage)
 	cod = get_cod(codage[i]);
 
 //	printf("%d\n", cod[0]); // находиться наше кол-во байт
-	printf("%02hhx\n", cod[1]);
+//	printf("%02hhx\n", cod[1]);
 //	printf("%d\n", cod[1]);
 //	printf("%d\n", cod[2]);
 

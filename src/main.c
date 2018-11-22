@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #include "../include/corewar.h"
-
-int			main(void)
+//int			main(int argc, char **argv)
+int 		main(void)
 {
 	t_val *bot;
 	bot = s_file();

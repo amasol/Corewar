@@ -25,7 +25,7 @@ typedef unsigned char	t_arr __attribute__((vector_size(sizeof(unsigned char) * 3
 
 //# define BUFF_S 10000
 
-
+// структура по которой мы будем опеределять нашу функцию
 typedef struct		s_op
 {
 }					t_op;
@@ -62,6 +62,8 @@ typedef struct		c_carriage
 
 
 int					main(void);
+//int					main(int argc, char **argv);
+
 t_val				*s_file();
 
 void				processing_function(t_val *bot);

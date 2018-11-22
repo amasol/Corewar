@@ -46,9 +46,9 @@ t_val			*s_file()
 	vl = vl->next;
 	free(vl);
 	free(tmp);
-	return (tmp);
+//	return (tmp);
 
-/*
+
 	while (i < 4)
 		printf("%x", tmp->m_header[i++]);
 	i = 0;
@@ -76,6 +76,6 @@ t_val			*s_file()
 	while (i < tmp->b_size_int)
 		printf("%x", tmp->executable_code[i++]);
 	printf("\n");
-*/
 
+	return (tmp);
 }
