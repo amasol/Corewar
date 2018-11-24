@@ -34,31 +34,7 @@ fcntl.h
 get_next_line.h
 /Users/amasol/amasol/project/corewar/libft/get_next_line.h
 
-/Users/amasol/amasol/project/corewar/src/error.c
-../include/corewar.h
-/Users/amasol/amasol/project/corewar/include/corewar.h
-
-/Users/amasol/amasol/project/corewar/src/ft_sti.c
-../include/corewar.h
-/Users/amasol/amasol/project/corewar/include/corewar.h
-
-/Users/amasol/amasol/project/corewar/src/function_check.c
-../include/corewar.h
-/Users/amasol/amasol/project/corewar/include/corewar.h
-
-/Users/amasol/amasol/project/corewar/src/main.c
-../include/corewar.h
-/Users/amasol/amasol/project/corewar/include/corewar.h
-
-/Users/amasol/amasol/project/corewar/src/op.c
-../include/corewar.h
-/Users/amasol/amasol/project/corewar/include/corewar.h
-
 /Users/amasol/amasol/project/corewar/src/save_bot.c
-../include/corewar.h
-/Users/amasol/amasol/project/corewar/include/corewar.h
-
-/Users/amasol/amasol/project/corewar/src/shift_bit.c
 ../include/corewar.h
 /Users/amasol/amasol/project/corewar/include/corewar.h
 

@@ -11,29 +11,43 @@
 /* ************************************************************************** */
 
 #include "../include/corewar.h"
-//int			main(int argc, char **argv)
-int 		main(void)
+int			main(int argc, char **argv)
+//int 		main(void)
 {
-	t_val bot;
-	bot = s_file();
+	int		j;
+	int		i;
+	t_val	bot;
+
+	i = 1;
+	j = 0;
+//	bot = s_file();
 
 //	processing_function(bot);
 
-i = 0;
-j = 0;
 
-while (av[i]) {
-	if(av[i][0] == '-'){
-		parsingFlag(av[i]);
-	} else {
-		parsingBot(av[i], structBot);
+	if (argv[i])
+	{
+		if(argv[i][0] == '-')
+		{
+			printf("test key");
+	//		parsingflag(argv[i]);
+			;
+		}
+		else
+			bot = s_file(argv[i]);
+	//		parsingBot(av[i], structBot);
+		i++;
 	}
-	i++;
-}
 
-void parsingFlag(char *arg){
-	int i = 1;
-	while (arg[i]){
+
+/*
+void parsingFlag(char *arg)
+{
+	int i;
+
+	i = 1;
+	while (arg[i])
+	{
 		if(arg[i] = 'n')
 			strucFlag->n = 1;
 		else if(arg[i] = 'l')
@@ -44,11 +58,12 @@ void parsingFlag(char *arg){
 	}
 }
 
-void parsingBot(char *arg, struct structBot) {
+void parsingBot(char *arg, struct structBot)
+{
 	fd = open(arg);
 
 }
-
+*/
 
 //	system("leaks corewar");
 	return (0);

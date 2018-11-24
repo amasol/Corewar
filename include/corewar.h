@@ -45,8 +45,8 @@ typedef struct		s_val
 	unsigned char 			n_null_two[4];
 	size_t					b_size_int;
 	unsigned char 			*executable_code;
-//	int						fd;
-//	struct	s_val			*next;
+	int						fd;
+	struct	s_val			*next;
 }					t_val;
 
 typedef struct		c_carriage
@@ -61,11 +61,13 @@ typedef struct		c_carriage
 }					t_carriage;
 
 
-int					main(void);
-//int					main(int argc, char **argv);
+//int					main(void);
+int					main(int argc, char **argv);
 
-t_val				s_file();
+t_val				s_file(char *bot);
+//t_val				s_file();
 
+void				parsingflag(char *flag);
 void				processing_function(t_val *bot);
 
 
