@@ -69,6 +69,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/amasol/amasol/project/corewar/libft/ft_toupper.c" "/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles/corewar.dir/libft/ft_toupper.c.o"
   "/Users/amasol/amasol/project/corewar/libft/get_next_line.c" "/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles/corewar.dir/libft/get_next_line.c.o"
   "/Users/amasol/amasol/project/corewar/src/error.c" "/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles/corewar.dir/src/error.c.o"
+  "/Users/amasol/amasol/project/corewar/src/ft_and.c" "/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles/corewar.dir/src/ft_and.c.o"
   "/Users/amasol/amasol/project/corewar/src/ft_sti.c" "/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles/corewar.dir/src/ft_sti.c.o"
   "/Users/amasol/amasol/project/corewar/src/function_check.c" "/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles/corewar.dir/src/function_check.c.o"
   "/Users/amasol/amasol/project/corewar/src/main.c" "/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles/corewar.dir/src/main.c.o"

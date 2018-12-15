@@ -245,6 +245,12 @@ CMakeFiles/corewar.dir/src/error.c.o
  /Users/amasol/amasol/project/corewar/libft/get_next_line.h
  /Users/amasol/amasol/project/corewar/libft/libft.h
  /Users/amasol/amasol/project/corewar/src/error.c
+CMakeFiles/corewar.dir/src/ft_and.c.o
+ /Users/amasol/amasol/project/corewar/include/corewar.h
+ /Users/amasol/amasol/project/corewar/include/op.h
+ /Users/amasol/amasol/project/corewar/libft/get_next_line.h
+ /Users/amasol/amasol/project/corewar/libft/libft.h
+ /Users/amasol/amasol/project/corewar/src/ft_and.c
 CMakeFiles/corewar.dir/src/ft_sti.c.o
  /Users/amasol/amasol/project/corewar/include/corewar.h
  /Users/amasol/amasol/project/corewar/include/op.h

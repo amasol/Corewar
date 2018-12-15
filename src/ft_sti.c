@@ -12,6 +12,7 @@
 
 #include "../include/corewar.h"
 
+/*
 t_arr				get_cod(char c)
 {
 	int 	i;
@@ -31,19 +32,30 @@ t_arr				get_cod(char c)
 	return (arr);
 }
 
-void				ft_sti(unsigned char *codage)
+void				ft_sti(unsigned char *codage, t_carriage *carriage)
 {
-	t_arr cod;
-
-	int i;
+	t_arr	cod;
+	int		i;
 
 	 i = 0;
+	//	здесь знаю кол-во считаных байт, но дальше мне
+	// нужно использовать эти данный для отработки функции ...
 	cod = get_cod(codage[i]);
+	++i;
+	if (cod[0] == T_REG)
+//	carriage->register_id[3] = cod[0];
 
-//	printf("%d\n", cod[0]); // находиться наше кол-во байт
+
+
+
 //	printf("%02hhx\n", cod[1]);
-//	printf("%d\n", cod[1]);
-//	printf("%d\n", cod[2]);
+
+
+	printf("%d\n", cod[0]);
+	printf("%d\n", cod[1]);
+	printf("%d\n", cod[2]);
+
+
 
 //	while (i < 10)
 //		printf("%02hhx ", codage[i++]);
@@ -51,7 +63,7 @@ void				ft_sti(unsigned char *codage)
 
 
 }
-
+*/
 
 
 /*

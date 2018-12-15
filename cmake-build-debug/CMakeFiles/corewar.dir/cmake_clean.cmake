@@ -70,6 +70,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/corewar.dir/src/function_check.c.o"
   "CMakeFiles/corewar.dir/src/op.c.o"
   "CMakeFiles/corewar.dir/src/ft_sti.c.o"
+  "CMakeFiles/corewar.dir/src/ft_and.c.o"
   "corewar.pdb"
   "corewar"
 )

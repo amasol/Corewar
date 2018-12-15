@@ -1878,6 +1878,33 @@ src/error.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/error.c.s
 .PHONY : src/error.c.s
 
+src/ft_and.o: src/ft_and.c.o
+
+.PHONY : src/ft_and.o
+
+# target to build an object file
+src/ft_and.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_and.c.o
+.PHONY : src/ft_and.c.o
+
+src/ft_and.i: src/ft_and.c.i
+
+.PHONY : src/ft_and.i
+
+# target to preprocess a source file
+src/ft_and.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_and.c.i
+.PHONY : src/ft_and.c.i
+
+src/ft_and.s: src/ft_and.c.s
+
+.PHONY : src/ft_and.s
+
+# target to generate assembly for a file
+src/ft_and.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_and.c.s
+.PHONY : src/ft_and.c.s
+
 src/ft_sti.o: src/ft_sti.c.o
 
 .PHONY : src/ft_sti.o
@@ -2244,6 +2271,9 @@ help:
 	@echo "... src/error.o"
 	@echo "... src/error.i"
 	@echo "... src/error.s"
+	@echo "... src/ft_and.o"
+	@echo "... src/ft_and.i"
+	@echo "... src/ft_and.s"
 	@echo "... src/ft_sti.o"
 	@echo "... src/ft_sti.i"
 	@echo "... src/ft_sti.s"

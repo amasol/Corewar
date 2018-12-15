@@ -287,6 +287,9 @@
 		<Unit filename="/Users/amasol/amasol/project/corewar/src/error.c">
 			<Option target="corewar"/>
 		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_and.c">
+			<Option target="corewar"/>
+		</Unit>
 		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_sti.c">
 			<Option target="corewar"/>
 		</Unit>

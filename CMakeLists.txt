@@ -15,6 +15,7 @@ add_executable(corewar
         src/save_bot.c
         src/function_check.c
         src/op.c
-        src/ft_sti.c)
+        src/ft_sti.c
+        src/ft_and.c)
 
 link_libraries(libft/libftprintf.a)
