@@ -245,18 +245,102 @@ CMakeFiles/corewar.dir/src/error.c.o
  /Users/amasol/amasol/project/corewar/libft/get_next_line.h
  /Users/amasol/amasol/project/corewar/libft/libft.h
  /Users/amasol/amasol/project/corewar/src/error.c
+CMakeFiles/corewar.dir/src/ft_add.c.o
+ /Users/amasol/amasol/project/corewar/include/corewar.h
+ /Users/amasol/amasol/project/corewar/include/op.h
+ /Users/amasol/amasol/project/corewar/libft/get_next_line.h
+ /Users/amasol/amasol/project/corewar/libft/libft.h
+ /Users/amasol/amasol/project/corewar/src/ft_add.c
+CMakeFiles/corewar.dir/src/ft_aff.c.o
+ /Users/amasol/amasol/project/corewar/include/corewar.h
+ /Users/amasol/amasol/project/corewar/include/op.h
+ /Users/amasol/amasol/project/corewar/libft/get_next_line.h
+ /Users/amasol/amasol/project/corewar/libft/libft.h
+ /Users/amasol/amasol/project/corewar/src/ft_aff.c
 CMakeFiles/corewar.dir/src/ft_and.c.o
  /Users/amasol/amasol/project/corewar/include/corewar.h
  /Users/amasol/amasol/project/corewar/include/op.h
  /Users/amasol/amasol/project/corewar/libft/get_next_line.h
  /Users/amasol/amasol/project/corewar/libft/libft.h
  /Users/amasol/amasol/project/corewar/src/ft_and.c
+CMakeFiles/corewar.dir/src/ft_fork.c.o
+ /Users/amasol/amasol/project/corewar/include/corewar.h
+ /Users/amasol/amasol/project/corewar/include/op.h
+ /Users/amasol/amasol/project/corewar/libft/get_next_line.h
+ /Users/amasol/amasol/project/corewar/libft/libft.h
+ /Users/amasol/amasol/project/corewar/src/ft_fork.c
+CMakeFiles/corewar.dir/src/ft_ld.c.o
+ /Users/amasol/amasol/project/corewar/include/corewar.h
+ /Users/amasol/amasol/project/corewar/include/op.h
+ /Users/amasol/amasol/project/corewar/libft/get_next_line.h
+ /Users/amasol/amasol/project/corewar/libft/libft.h
+ /Users/amasol/amasol/project/corewar/src/ft_ld.c
+CMakeFiles/corewar.dir/src/ft_ldi.c.o
+ /Users/amasol/amasol/project/corewar/include/corewar.h
+ /Users/amasol/amasol/project/corewar/include/op.h
+ /Users/amasol/amasol/project/corewar/libft/get_next_line.h
+ /Users/amasol/amasol/project/corewar/libft/libft.h
+ /Users/amasol/amasol/project/corewar/src/ft_ldi.c
+CMakeFiles/corewar.dir/src/ft_lfork.c.o
+ /Users/amasol/amasol/project/corewar/include/corewar.h
+ /Users/amasol/amasol/project/corewar/include/op.h
+ /Users/amasol/amasol/project/corewar/libft/get_next_line.h
+ /Users/amasol/amasol/project/corewar/libft/libft.h
+ /Users/amasol/amasol/project/corewar/src/ft_lfork.c
+CMakeFiles/corewar.dir/src/ft_live.c.o
+ /Users/amasol/amasol/project/corewar/include/corewar.h
+ /Users/amasol/amasol/project/corewar/include/op.h
+ /Users/amasol/amasol/project/corewar/libft/get_next_line.h
+ /Users/amasol/amasol/project/corewar/libft/libft.h
+ /Users/amasol/amasol/project/corewar/src/ft_live.c
+CMakeFiles/corewar.dir/src/ft_lld.c.o
+ /Users/amasol/amasol/project/corewar/include/corewar.h
+ /Users/amasol/amasol/project/corewar/include/op.h
+ /Users/amasol/amasol/project/corewar/libft/get_next_line.h
+ /Users/amasol/amasol/project/corewar/libft/libft.h
+ /Users/amasol/amasol/project/corewar/src/ft_lld.c
+CMakeFiles/corewar.dir/src/ft_lldi.c.o
+ /Users/amasol/amasol/project/corewar/include/corewar.h
+ /Users/amasol/amasol/project/corewar/include/op.h
+ /Users/amasol/amasol/project/corewar/libft/get_next_line.h
+ /Users/amasol/amasol/project/corewar/libft/libft.h
+ /Users/amasol/amasol/project/corewar/src/ft_lldi.c
+CMakeFiles/corewar.dir/src/ft_or.c.o
+ /Users/amasol/amasol/project/corewar/include/corewar.h
+ /Users/amasol/amasol/project/corewar/include/op.h
+ /Users/amasol/amasol/project/corewar/libft/get_next_line.h
+ /Users/amasol/amasol/project/corewar/libft/libft.h
+ /Users/amasol/amasol/project/corewar/src/ft_or.c
+CMakeFiles/corewar.dir/src/ft_st.c.o
+ /Users/amasol/amasol/project/corewar/include/corewar.h
+ /Users/amasol/amasol/project/corewar/include/op.h
+ /Users/amasol/amasol/project/corewar/libft/get_next_line.h
+ /Users/amasol/amasol/project/corewar/libft/libft.h
+ /Users/amasol/amasol/project/corewar/src/ft_st.c
 CMakeFiles/corewar.dir/src/ft_sti.c.o
  /Users/amasol/amasol/project/corewar/include/corewar.h
  /Users/amasol/amasol/project/corewar/include/op.h
  /Users/amasol/amasol/project/corewar/libft/get_next_line.h
  /Users/amasol/amasol/project/corewar/libft/libft.h
  /Users/amasol/amasol/project/corewar/src/ft_sti.c
+CMakeFiles/corewar.dir/src/ft_sub.c.o
+ /Users/amasol/amasol/project/corewar/include/corewar.h
+ /Users/amasol/amasol/project/corewar/include/op.h
+ /Users/amasol/amasol/project/corewar/libft/get_next_line.h
+ /Users/amasol/amasol/project/corewar/libft/libft.h
+ /Users/amasol/amasol/project/corewar/src/ft_sub.c
+CMakeFiles/corewar.dir/src/ft_xor.c.o
+ /Users/amasol/amasol/project/corewar/include/corewar.h
+ /Users/amasol/amasol/project/corewar/include/op.h
+ /Users/amasol/amasol/project/corewar/libft/get_next_line.h
+ /Users/amasol/amasol/project/corewar/libft/libft.h
+ /Users/amasol/amasol/project/corewar/src/ft_xor.c
+CMakeFiles/corewar.dir/src/ft_zjmp.c.o
+ /Users/amasol/amasol/project/corewar/include/corewar.h
+ /Users/amasol/amasol/project/corewar/include/op.h
+ /Users/amasol/amasol/project/corewar/libft/get_next_line.h
+ /Users/amasol/amasol/project/corewar/libft/libft.h
+ /Users/amasol/amasol/project/corewar/src/ft_zjmp.c
 CMakeFiles/corewar.dir/src/function_check.c.o
  /Users/amasol/amasol/project/corewar/include/corewar.h
  /Users/amasol/amasol/project/corewar/include/op.h

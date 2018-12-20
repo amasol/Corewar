@@ -993,6 +993,188 @@ CMakeFiles/corewar.dir/src/ft_and.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/src/ft_and.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amasol/amasol/project/corewar/src/ft_and.c -o CMakeFiles/corewar.dir/src/ft_and.c.s
 
+CMakeFiles/corewar.dir/src/ft_add.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/src/ft_add.c.o: ../src/ft_add.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/corewar.dir/src/ft_add.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/src/ft_add.c.o   -c /Users/amasol/amasol/project/corewar/src/ft_add.c
+
+CMakeFiles/corewar.dir/src/ft_add.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/src/ft_add.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/amasol/amasol/project/corewar/src/ft_add.c > CMakeFiles/corewar.dir/src/ft_add.c.i
+
+CMakeFiles/corewar.dir/src/ft_add.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/src/ft_add.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amasol/amasol/project/corewar/src/ft_add.c -o CMakeFiles/corewar.dir/src/ft_add.c.s
+
+CMakeFiles/corewar.dir/src/ft_aff.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/src/ft_aff.c.o: ../src/ft_aff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/corewar.dir/src/ft_aff.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/src/ft_aff.c.o   -c /Users/amasol/amasol/project/corewar/src/ft_aff.c
+
+CMakeFiles/corewar.dir/src/ft_aff.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/src/ft_aff.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/amasol/amasol/project/corewar/src/ft_aff.c > CMakeFiles/corewar.dir/src/ft_aff.c.i
+
+CMakeFiles/corewar.dir/src/ft_aff.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/src/ft_aff.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amasol/amasol/project/corewar/src/ft_aff.c -o CMakeFiles/corewar.dir/src/ft_aff.c.s
+
+CMakeFiles/corewar.dir/src/ft_fork.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/src/ft_fork.c.o: ../src/ft_fork.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/corewar.dir/src/ft_fork.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/src/ft_fork.c.o   -c /Users/amasol/amasol/project/corewar/src/ft_fork.c
+
+CMakeFiles/corewar.dir/src/ft_fork.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/src/ft_fork.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/amasol/amasol/project/corewar/src/ft_fork.c > CMakeFiles/corewar.dir/src/ft_fork.c.i
+
+CMakeFiles/corewar.dir/src/ft_fork.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/src/ft_fork.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amasol/amasol/project/corewar/src/ft_fork.c -o CMakeFiles/corewar.dir/src/ft_fork.c.s
+
+CMakeFiles/corewar.dir/src/ft_ld.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/src/ft_ld.c.o: ../src/ft_ld.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/corewar.dir/src/ft_ld.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/src/ft_ld.c.o   -c /Users/amasol/amasol/project/corewar/src/ft_ld.c
+
+CMakeFiles/corewar.dir/src/ft_ld.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/src/ft_ld.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/amasol/amasol/project/corewar/src/ft_ld.c > CMakeFiles/corewar.dir/src/ft_ld.c.i
+
+CMakeFiles/corewar.dir/src/ft_ld.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/src/ft_ld.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amasol/amasol/project/corewar/src/ft_ld.c -o CMakeFiles/corewar.dir/src/ft_ld.c.s
+
+CMakeFiles/corewar.dir/src/ft_ldi.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/src/ft_ldi.c.o: ../src/ft_ldi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/corewar.dir/src/ft_ldi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/src/ft_ldi.c.o   -c /Users/amasol/amasol/project/corewar/src/ft_ldi.c
+
+CMakeFiles/corewar.dir/src/ft_ldi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/src/ft_ldi.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/amasol/amasol/project/corewar/src/ft_ldi.c > CMakeFiles/corewar.dir/src/ft_ldi.c.i
+
+CMakeFiles/corewar.dir/src/ft_ldi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/src/ft_ldi.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amasol/amasol/project/corewar/src/ft_ldi.c -o CMakeFiles/corewar.dir/src/ft_ldi.c.s
+
+CMakeFiles/corewar.dir/src/ft_lfork.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/src/ft_lfork.c.o: ../src/ft_lfork.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/corewar.dir/src/ft_lfork.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/src/ft_lfork.c.o   -c /Users/amasol/amasol/project/corewar/src/ft_lfork.c
+
+CMakeFiles/corewar.dir/src/ft_lfork.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/src/ft_lfork.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/amasol/amasol/project/corewar/src/ft_lfork.c > CMakeFiles/corewar.dir/src/ft_lfork.c.i
+
+CMakeFiles/corewar.dir/src/ft_lfork.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/src/ft_lfork.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amasol/amasol/project/corewar/src/ft_lfork.c -o CMakeFiles/corewar.dir/src/ft_lfork.c.s
+
+CMakeFiles/corewar.dir/src/ft_live.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/src/ft_live.c.o: ../src/ft_live.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/corewar.dir/src/ft_live.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/src/ft_live.c.o   -c /Users/amasol/amasol/project/corewar/src/ft_live.c
+
+CMakeFiles/corewar.dir/src/ft_live.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/src/ft_live.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/amasol/amasol/project/corewar/src/ft_live.c > CMakeFiles/corewar.dir/src/ft_live.c.i
+
+CMakeFiles/corewar.dir/src/ft_live.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/src/ft_live.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amasol/amasol/project/corewar/src/ft_live.c -o CMakeFiles/corewar.dir/src/ft_live.c.s
+
+CMakeFiles/corewar.dir/src/ft_lld.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/src/ft_lld.c.o: ../src/ft_lld.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/corewar.dir/src/ft_lld.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/src/ft_lld.c.o   -c /Users/amasol/amasol/project/corewar/src/ft_lld.c
+
+CMakeFiles/corewar.dir/src/ft_lld.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/src/ft_lld.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/amasol/amasol/project/corewar/src/ft_lld.c > CMakeFiles/corewar.dir/src/ft_lld.c.i
+
+CMakeFiles/corewar.dir/src/ft_lld.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/src/ft_lld.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amasol/amasol/project/corewar/src/ft_lld.c -o CMakeFiles/corewar.dir/src/ft_lld.c.s
+
+CMakeFiles/corewar.dir/src/ft_lldi.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/src/ft_lldi.c.o: ../src/ft_lldi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/corewar.dir/src/ft_lldi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/src/ft_lldi.c.o   -c /Users/amasol/amasol/project/corewar/src/ft_lldi.c
+
+CMakeFiles/corewar.dir/src/ft_lldi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/src/ft_lldi.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/amasol/amasol/project/corewar/src/ft_lldi.c > CMakeFiles/corewar.dir/src/ft_lldi.c.i
+
+CMakeFiles/corewar.dir/src/ft_lldi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/src/ft_lldi.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amasol/amasol/project/corewar/src/ft_lldi.c -o CMakeFiles/corewar.dir/src/ft_lldi.c.s
+
+CMakeFiles/corewar.dir/src/ft_or.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/src/ft_or.c.o: ../src/ft_or.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/corewar.dir/src/ft_or.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/src/ft_or.c.o   -c /Users/amasol/amasol/project/corewar/src/ft_or.c
+
+CMakeFiles/corewar.dir/src/ft_or.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/src/ft_or.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/amasol/amasol/project/corewar/src/ft_or.c > CMakeFiles/corewar.dir/src/ft_or.c.i
+
+CMakeFiles/corewar.dir/src/ft_or.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/src/ft_or.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amasol/amasol/project/corewar/src/ft_or.c -o CMakeFiles/corewar.dir/src/ft_or.c.s
+
+CMakeFiles/corewar.dir/src/ft_st.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/src/ft_st.c.o: ../src/ft_st.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/corewar.dir/src/ft_st.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/src/ft_st.c.o   -c /Users/amasol/amasol/project/corewar/src/ft_st.c
+
+CMakeFiles/corewar.dir/src/ft_st.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/src/ft_st.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/amasol/amasol/project/corewar/src/ft_st.c > CMakeFiles/corewar.dir/src/ft_st.c.i
+
+CMakeFiles/corewar.dir/src/ft_st.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/src/ft_st.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amasol/amasol/project/corewar/src/ft_st.c -o CMakeFiles/corewar.dir/src/ft_st.c.s
+
+CMakeFiles/corewar.dir/src/ft_sub.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/src/ft_sub.c.o: ../src/ft_sub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/corewar.dir/src/ft_sub.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/src/ft_sub.c.o   -c /Users/amasol/amasol/project/corewar/src/ft_sub.c
+
+CMakeFiles/corewar.dir/src/ft_sub.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/src/ft_sub.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/amasol/amasol/project/corewar/src/ft_sub.c > CMakeFiles/corewar.dir/src/ft_sub.c.i
+
+CMakeFiles/corewar.dir/src/ft_sub.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/src/ft_sub.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amasol/amasol/project/corewar/src/ft_sub.c -o CMakeFiles/corewar.dir/src/ft_sub.c.s
+
+CMakeFiles/corewar.dir/src/ft_xor.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/src/ft_xor.c.o: ../src/ft_xor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/corewar.dir/src/ft_xor.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/src/ft_xor.c.o   -c /Users/amasol/amasol/project/corewar/src/ft_xor.c
+
+CMakeFiles/corewar.dir/src/ft_xor.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/src/ft_xor.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/amasol/amasol/project/corewar/src/ft_xor.c > CMakeFiles/corewar.dir/src/ft_xor.c.i
+
+CMakeFiles/corewar.dir/src/ft_xor.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/src/ft_xor.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amasol/amasol/project/corewar/src/ft_xor.c -o CMakeFiles/corewar.dir/src/ft_xor.c.s
+
+CMakeFiles/corewar.dir/src/ft_zjmp.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/src/ft_zjmp.c.o: ../src/ft_zjmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/corewar.dir/src/ft_zjmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/src/ft_zjmp.c.o   -c /Users/amasol/amasol/project/corewar/src/ft_zjmp.c
+
+CMakeFiles/corewar.dir/src/ft_zjmp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/src/ft_zjmp.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/amasol/amasol/project/corewar/src/ft_zjmp.c > CMakeFiles/corewar.dir/src/ft_zjmp.c.i
+
+CMakeFiles/corewar.dir/src/ft_zjmp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/src/ft_zjmp.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/amasol/amasol/project/corewar/src/ft_zjmp.c -o CMakeFiles/corewar.dir/src/ft_zjmp.c.s
+
 # Object files for target corewar
 corewar_OBJECTS = \
 "CMakeFiles/corewar.dir/libft/ft_above_zero.c.o" \
@@ -1066,7 +1248,21 @@ corewar_OBJECTS = \
 "CMakeFiles/corewar.dir/src/function_check.c.o" \
 "CMakeFiles/corewar.dir/src/op.c.o" \
 "CMakeFiles/corewar.dir/src/ft_sti.c.o" \
-"CMakeFiles/corewar.dir/src/ft_and.c.o"
+"CMakeFiles/corewar.dir/src/ft_and.c.o" \
+"CMakeFiles/corewar.dir/src/ft_add.c.o" \
+"CMakeFiles/corewar.dir/src/ft_aff.c.o" \
+"CMakeFiles/corewar.dir/src/ft_fork.c.o" \
+"CMakeFiles/corewar.dir/src/ft_ld.c.o" \
+"CMakeFiles/corewar.dir/src/ft_ldi.c.o" \
+"CMakeFiles/corewar.dir/src/ft_lfork.c.o" \
+"CMakeFiles/corewar.dir/src/ft_live.c.o" \
+"CMakeFiles/corewar.dir/src/ft_lld.c.o" \
+"CMakeFiles/corewar.dir/src/ft_lldi.c.o" \
+"CMakeFiles/corewar.dir/src/ft_or.c.o" \
+"CMakeFiles/corewar.dir/src/ft_st.c.o" \
+"CMakeFiles/corewar.dir/src/ft_sub.c.o" \
+"CMakeFiles/corewar.dir/src/ft_xor.c.o" \
+"CMakeFiles/corewar.dir/src/ft_zjmp.c.o"
 
 # External object files for target corewar
 corewar_EXTERNAL_OBJECTS =
@@ -1143,9 +1339,23 @@ corewar: CMakeFiles/corewar.dir/src/function_check.c.o
 corewar: CMakeFiles/corewar.dir/src/op.c.o
 corewar: CMakeFiles/corewar.dir/src/ft_sti.c.o
 corewar: CMakeFiles/corewar.dir/src/ft_and.c.o
+corewar: CMakeFiles/corewar.dir/src/ft_add.c.o
+corewar: CMakeFiles/corewar.dir/src/ft_aff.c.o
+corewar: CMakeFiles/corewar.dir/src/ft_fork.c.o
+corewar: CMakeFiles/corewar.dir/src/ft_ld.c.o
+corewar: CMakeFiles/corewar.dir/src/ft_ldi.c.o
+corewar: CMakeFiles/corewar.dir/src/ft_lfork.c.o
+corewar: CMakeFiles/corewar.dir/src/ft_live.c.o
+corewar: CMakeFiles/corewar.dir/src/ft_lld.c.o
+corewar: CMakeFiles/corewar.dir/src/ft_lldi.c.o
+corewar: CMakeFiles/corewar.dir/src/ft_or.c.o
+corewar: CMakeFiles/corewar.dir/src/ft_st.c.o
+corewar: CMakeFiles/corewar.dir/src/ft_sub.c.o
+corewar: CMakeFiles/corewar.dir/src/ft_xor.c.o
+corewar: CMakeFiles/corewar.dir/src/ft_zjmp.c.o
 corewar: CMakeFiles/corewar.dir/build.make
 corewar: CMakeFiles/corewar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Linking C executable corewar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/amasol/amasol/project/corewar/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Linking C executable corewar"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/corewar.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

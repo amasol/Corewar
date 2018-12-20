@@ -19,7 +19,13 @@
 # include <stdio.h>
 
 typedef unsigned char	t_arr __attribute__((vector_size(sizeof(unsigned char) * 3)));
-
+/*
+typedef struct		operations
+{
+//	void (*func)(void);
+	void (*ft_sti)(&codage, &carriage);
+}					operations;
+*/
 
 //# include <math.h>
 
@@ -51,13 +57,15 @@ typedef struct		s_val
  */
 typedef struct		c_carriage
 {
-	unsigned int	register_id[REG_NUMBER];
-	int				position;
-	int				carry;
-	int				player_id;			// номер игрока который его породил.
-	int				alive;				// живой или нет 0 || 1.
-	int				execution_team;		// команду которую он исполняет.
-	int				number_cycle;					// кол-во циклов, сколько ему осталось ждать до исполнения команды.
+	unsigned int		register_id[REG_NUMBER];
+	int					position;
+	int					carry;
+	int					player_id;			// номер игрока который его породил.
+	int					alive;				// живой или нет 0 || 1.
+	int					execution_team;		// команду которую он исполняет.
+	int					number_cycle;					// кол-во циклов, сколько ему осталось ждать до исполнения команды.
+	struct t_carriage	*next;
+	struct t_carriage	*last;
 }					t_carriage;
 
 
@@ -67,7 +75,8 @@ int					main(int argc, char **argv);
 t_val				s_file(char *bot);
 
 void				parsingflag(char *flag);
-void				processing_function(t_val *bot, t_carriage *carriage);
+int					processing_function(t_val *bot, t_carriage *carriage);
+//void				search_func(t_carriage *carriage);
 
 
 /*
@@ -78,13 +87,19 @@ void				error(char *str);
 
 
 //unsigned			shift_bit(unsigned char *buff);  // вытаскивание наших аргументов
-size_t		shift_bit(unsigned char tmp, unsigned char tmp2);
+size_t				shift_bit(unsigned char tmp, unsigned char tmp2);
 
 /*
 ** Virtual machine
  */
-//void				ft_sti(unsigned char *codage, t_carriage *carriage);
-//void				ft_and(unsigned char *codage, t_carriage *carriage);
+void				ft_live(unsigned char *codage, t_carriage *carriage);
+void				ft_ld(unsigned char *codage, t_carriage *carriage);
+
+int				ft_sti(unsigned char *codage, t_carriage *carriage);
+
+void				ft_and(unsigned char *codage, t_carriage *carriage);
+void				ft_xor(unsigned char *codage, t_carriage *carriage);
+
 t_arr				get_cod(char c);
 
 

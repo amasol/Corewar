@@ -12,7 +12,7 @@
 
 #include "../include/corewar.h"
 
-/*
+
 t_arr				get_cod(char c)
 {
 	int 	i;
@@ -32,17 +32,21 @@ t_arr				get_cod(char c)
 	return (arr);
 }
 
-void				ft_sti(unsigned char *codage, t_carriage *carriage)
+int				ft_sti(unsigned char *map, t_carriage *carriage)
 {
 	t_arr	cod;
 	int		i;
+	int 	tmp[3];
 
-	 i = 0;
+	 i = carriage->position + 1;
 	//	здесь знаю кол-во считаных байт, но дальше мне
 	// нужно использовать эти данный для отработки функции ...
-	cod = get_cod(codage[i]);
+	cod = get_cod(map[i]);
 	++i;
-	if (cod[0] == T_REG)
+	if (cod[0] == REG_CODE)
+		tmp[0] = carriage->register_id[map[i]];
+//	++i;
+//	if (cod[0] == T_REG)
 //	carriage->register_id[3] = cod[0];
 
 
@@ -51,9 +55,9 @@ void				ft_sti(unsigned char *codage, t_carriage *carriage)
 //	printf("%02hhx\n", cod[1]);
 
 
-	printf("%d\n", cod[0]);
-	printf("%d\n", cod[1]);
-	printf("%d\n", cod[2]);
+//	printf("%d\n", cod[0]);
+//	printf("%d\n", cod[1]);
+//	printf("%d\n", cod[2]);
 
 
 
@@ -61,12 +65,14 @@ void				ft_sti(unsigned char *codage, t_carriage *carriage)
 //		printf("%02hhx ", codage[i++]);
 //	printf("\n");
 
-
+	return (0);
+//	return (ft_atoi(cod[0]));
 }
-*/
+
 
 
 /*
+ * // шлак
 void				ft_sti(unsigned char *codage)
 {
 	int i;
@@ -89,5 +95,6 @@ void				ft_sti(unsigned char *codage)
 		T_IND...;
 }
 */
+//};
 
 

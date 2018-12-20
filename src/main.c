@@ -12,8 +12,6 @@
 
 #include "../include/corewar.h"
 
-unsigned char	g_map[MEM_SIZE];
-
 /*
 void parsingFlag(char *arg)
 {
@@ -34,8 +32,7 @@ void parsingFlag(char *arg)
 
 */
 
-
-
+unsigned char	g_map[MEM_SIZE];
 
 int			main(int argc, char **argv)
 {
@@ -43,7 +40,8 @@ int			main(int argc, char **argv)
 	t_val		bot[4];
 	int i;
 //	t_val		bot;
-//	t_carriage	carriage;
+	t_carriage	carriage;
+//	t_carriage	first_carr;
 
 	bots = 1;
 	while (argv[bots] && argc < 4)
@@ -55,8 +53,6 @@ int			main(int argc, char **argv)
 		}
 		else
 			bot[bots] = s_file(argv[bots]);
-//			processing_function(bot, &carriage); // <- возможно это функцию нужно вынести в дргуой
-// 				цыкл что бы у уже ходить конкретно по тем коретка которые будут
 		bots++;
 	}
 
@@ -64,20 +60,59 @@ int			main(int argc, char **argv)
 		error("many arguments");
 
 /*
-	ft_bzero(g_map, MEM_SIZE);
-	i = -1;
-	while (++i < bots)
-	{
-		ft_memcpy(g_map + i * MEM_SIZE / bots, bot[i].executable_code, bot[i].b_size_int);
+	i = 0;
+	while (i < 4)
+		printf("%x", bot[1].m_header[i++]);
+	i = 0;
+	printf("\n");
+	while (i < PROG_NAME_LENGTH)
+		printf("%x", bot[1].bot_name[i++]);
+	printf("\n");
+	i = 0;
+	while (i < 4)
+		printf("%x", bot[1].b_size[i++]);
+	printf("\n");
+	i = 0;
+	while (i < COMMENT_LENGTH)
+		printf("%x", bot[1].b_comment[i++]);
+	printf("\n");
+	i = 0;
+	while (i < bot[1].b_size_int)
+		printf("%x", bot[1].executable_code[i++]);
+	printf("\n");
+*/
 
+
+
+
+
+
+
+//	first_carr = carriage;
+	carriage.position = -1;
+	bots = 1;
+	// возвращаем значение сдвинутой каретки
+	if (++carriage.position < MEM_SIZE)
+	{
+		carriage.position += processing_function(&bot[bots], &carriage);
 	}
+
+
+//	ft_bzero(g_map, MEM_SIZE);
+//	i = -1;
+//	while (++i < bots)
+//	{
+//		ft_memcpy(g_map + i * MEM_SIZE / bots, bot[i].executable_code, bot[i].b_size_int);
+//
+//	}
+
+
+
+
 	//  разбил ботами карту на столько частей сколько нужно!
-	//	 как я буду ходить каретками по тем ботам что есть на карте ?
-	// это нужно в каждый момент заходить выпонлнять функцию и делать переключение
-	// 	в конкретную карту бота и идти по картеке,
 	//	использовать функцию processing_function(bot, &carriage);
 	// как пользоваться структоруй op.c
-*/
+
 //	system("leaks corewar");
 	return (0);
 }

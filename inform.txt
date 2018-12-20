@@ -27,6 +27,9 @@
 	как правильно пользоваться структурой(ее еще нужно создать) op.c (знаю что она очень полезная)
 
 
+	./corewar champs/examples/zork.cor champs/examples/bigzork.cor champs/Gagnant.cor -n
+
+
 
 
 

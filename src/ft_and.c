@@ -11,8 +11,8 @@
 /* ************************************************************************** */
 
 #include "../include/corewar.h"
-/*
-void				ft_and(unsigned char *codage)
+
+void				ft_and(unsigned char *codage, t_carriage *carriage)
 {
 	t_arr cod;
 
@@ -25,7 +25,4 @@ void				ft_and(unsigned char *codage)
 //		printf("%02hhx ", codage[i++]);
 //	printf("\n");
 
-
 }
-
-*/

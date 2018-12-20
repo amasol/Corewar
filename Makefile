@@ -6,7 +6,9 @@ CC=clang
 LIBFT = libft/libft.a
 
 SRC = main.c error.c shift_bit.c save_bot.c function_check.c \
-      ft_sti.c op.c ft_and.c
+      ft_sti.c op.c ft_and.c ft_add.c ft_aff.c ft_fork.c ft_ld.c ft_ldi.c \
+      ft_lfork.c ft_live.c ft_lld.c ft_lldi.c ft_or.c ft_st.c ft_sub.c ft_xor.c \
+      ft_zjmp.c
 OBJ = $(SRC:.c=.o)
 
 OBJDIR=obj

@@ -287,10 +287,52 @@
 		<Unit filename="/Users/amasol/amasol/project/corewar/src/error.c">
 			<Option target="corewar"/>
 		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_add.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_aff.c">
+			<Option target="corewar"/>
+		</Unit>
 		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_and.c">
 			<Option target="corewar"/>
 		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_fork.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_ld.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_ldi.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_lfork.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_live.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_lld.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_lldi.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_or.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_st.c">
+			<Option target="corewar"/>
+		</Unit>
 		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_sti.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_sub.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_xor.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/amasol/amasol/project/corewar/src/ft_zjmp.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/amasol/amasol/project/corewar/src/function_check.c">

@@ -1878,6 +1878,60 @@ src/error.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/error.c.s
 .PHONY : src/error.c.s
 
+src/ft_add.o: src/ft_add.c.o
+
+.PHONY : src/ft_add.o
+
+# target to build an object file
+src/ft_add.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_add.c.o
+.PHONY : src/ft_add.c.o
+
+src/ft_add.i: src/ft_add.c.i
+
+.PHONY : src/ft_add.i
+
+# target to preprocess a source file
+src/ft_add.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_add.c.i
+.PHONY : src/ft_add.c.i
+
+src/ft_add.s: src/ft_add.c.s
+
+.PHONY : src/ft_add.s
+
+# target to generate assembly for a file
+src/ft_add.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_add.c.s
+.PHONY : src/ft_add.c.s
+
+src/ft_aff.o: src/ft_aff.c.o
+
+.PHONY : src/ft_aff.o
+
+# target to build an object file
+src/ft_aff.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_aff.c.o
+.PHONY : src/ft_aff.c.o
+
+src/ft_aff.i: src/ft_aff.c.i
+
+.PHONY : src/ft_aff.i
+
+# target to preprocess a source file
+src/ft_aff.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_aff.c.i
+.PHONY : src/ft_aff.c.i
+
+src/ft_aff.s: src/ft_aff.c.s
+
+.PHONY : src/ft_aff.s
+
+# target to generate assembly for a file
+src/ft_aff.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_aff.c.s
+.PHONY : src/ft_aff.c.s
+
 src/ft_and.o: src/ft_and.c.o
 
 .PHONY : src/ft_and.o
@@ -1905,6 +1959,249 @@ src/ft_and.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_and.c.s
 .PHONY : src/ft_and.c.s
 
+src/ft_fork.o: src/ft_fork.c.o
+
+.PHONY : src/ft_fork.o
+
+# target to build an object file
+src/ft_fork.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_fork.c.o
+.PHONY : src/ft_fork.c.o
+
+src/ft_fork.i: src/ft_fork.c.i
+
+.PHONY : src/ft_fork.i
+
+# target to preprocess a source file
+src/ft_fork.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_fork.c.i
+.PHONY : src/ft_fork.c.i
+
+src/ft_fork.s: src/ft_fork.c.s
+
+.PHONY : src/ft_fork.s
+
+# target to generate assembly for a file
+src/ft_fork.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_fork.c.s
+.PHONY : src/ft_fork.c.s
+
+src/ft_ld.o: src/ft_ld.c.o
+
+.PHONY : src/ft_ld.o
+
+# target to build an object file
+src/ft_ld.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_ld.c.o
+.PHONY : src/ft_ld.c.o
+
+src/ft_ld.i: src/ft_ld.c.i
+
+.PHONY : src/ft_ld.i
+
+# target to preprocess a source file
+src/ft_ld.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_ld.c.i
+.PHONY : src/ft_ld.c.i
+
+src/ft_ld.s: src/ft_ld.c.s
+
+.PHONY : src/ft_ld.s
+
+# target to generate assembly for a file
+src/ft_ld.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_ld.c.s
+.PHONY : src/ft_ld.c.s
+
+src/ft_ldi.o: src/ft_ldi.c.o
+
+.PHONY : src/ft_ldi.o
+
+# target to build an object file
+src/ft_ldi.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_ldi.c.o
+.PHONY : src/ft_ldi.c.o
+
+src/ft_ldi.i: src/ft_ldi.c.i
+
+.PHONY : src/ft_ldi.i
+
+# target to preprocess a source file
+src/ft_ldi.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_ldi.c.i
+.PHONY : src/ft_ldi.c.i
+
+src/ft_ldi.s: src/ft_ldi.c.s
+
+.PHONY : src/ft_ldi.s
+
+# target to generate assembly for a file
+src/ft_ldi.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_ldi.c.s
+.PHONY : src/ft_ldi.c.s
+
+src/ft_lfork.o: src/ft_lfork.c.o
+
+.PHONY : src/ft_lfork.o
+
+# target to build an object file
+src/ft_lfork.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_lfork.c.o
+.PHONY : src/ft_lfork.c.o
+
+src/ft_lfork.i: src/ft_lfork.c.i
+
+.PHONY : src/ft_lfork.i
+
+# target to preprocess a source file
+src/ft_lfork.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_lfork.c.i
+.PHONY : src/ft_lfork.c.i
+
+src/ft_lfork.s: src/ft_lfork.c.s
+
+.PHONY : src/ft_lfork.s
+
+# target to generate assembly for a file
+src/ft_lfork.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_lfork.c.s
+.PHONY : src/ft_lfork.c.s
+
+src/ft_live.o: src/ft_live.c.o
+
+.PHONY : src/ft_live.o
+
+# target to build an object file
+src/ft_live.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_live.c.o
+.PHONY : src/ft_live.c.o
+
+src/ft_live.i: src/ft_live.c.i
+
+.PHONY : src/ft_live.i
+
+# target to preprocess a source file
+src/ft_live.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_live.c.i
+.PHONY : src/ft_live.c.i
+
+src/ft_live.s: src/ft_live.c.s
+
+.PHONY : src/ft_live.s
+
+# target to generate assembly for a file
+src/ft_live.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_live.c.s
+.PHONY : src/ft_live.c.s
+
+src/ft_lld.o: src/ft_lld.c.o
+
+.PHONY : src/ft_lld.o
+
+# target to build an object file
+src/ft_lld.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_lld.c.o
+.PHONY : src/ft_lld.c.o
+
+src/ft_lld.i: src/ft_lld.c.i
+
+.PHONY : src/ft_lld.i
+
+# target to preprocess a source file
+src/ft_lld.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_lld.c.i
+.PHONY : src/ft_lld.c.i
+
+src/ft_lld.s: src/ft_lld.c.s
+
+.PHONY : src/ft_lld.s
+
+# target to generate assembly for a file
+src/ft_lld.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_lld.c.s
+.PHONY : src/ft_lld.c.s
+
+src/ft_lldi.o: src/ft_lldi.c.o
+
+.PHONY : src/ft_lldi.o
+
+# target to build an object file
+src/ft_lldi.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_lldi.c.o
+.PHONY : src/ft_lldi.c.o
+
+src/ft_lldi.i: src/ft_lldi.c.i
+
+.PHONY : src/ft_lldi.i
+
+# target to preprocess a source file
+src/ft_lldi.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_lldi.c.i
+.PHONY : src/ft_lldi.c.i
+
+src/ft_lldi.s: src/ft_lldi.c.s
+
+.PHONY : src/ft_lldi.s
+
+# target to generate assembly for a file
+src/ft_lldi.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_lldi.c.s
+.PHONY : src/ft_lldi.c.s
+
+src/ft_or.o: src/ft_or.c.o
+
+.PHONY : src/ft_or.o
+
+# target to build an object file
+src/ft_or.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_or.c.o
+.PHONY : src/ft_or.c.o
+
+src/ft_or.i: src/ft_or.c.i
+
+.PHONY : src/ft_or.i
+
+# target to preprocess a source file
+src/ft_or.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_or.c.i
+.PHONY : src/ft_or.c.i
+
+src/ft_or.s: src/ft_or.c.s
+
+.PHONY : src/ft_or.s
+
+# target to generate assembly for a file
+src/ft_or.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_or.c.s
+.PHONY : src/ft_or.c.s
+
+src/ft_st.o: src/ft_st.c.o
+
+.PHONY : src/ft_st.o
+
+# target to build an object file
+src/ft_st.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_st.c.o
+.PHONY : src/ft_st.c.o
+
+src/ft_st.i: src/ft_st.c.i
+
+.PHONY : src/ft_st.i
+
+# target to preprocess a source file
+src/ft_st.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_st.c.i
+.PHONY : src/ft_st.c.i
+
+src/ft_st.s: src/ft_st.c.s
+
+.PHONY : src/ft_st.s
+
+# target to generate assembly for a file
+src/ft_st.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_st.c.s
+.PHONY : src/ft_st.c.s
+
 src/ft_sti.o: src/ft_sti.c.o
 
 .PHONY : src/ft_sti.o
@@ -1931,6 +2228,87 @@ src/ft_sti.s: src/ft_sti.c.s
 src/ft_sti.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_sti.c.s
 .PHONY : src/ft_sti.c.s
+
+src/ft_sub.o: src/ft_sub.c.o
+
+.PHONY : src/ft_sub.o
+
+# target to build an object file
+src/ft_sub.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_sub.c.o
+.PHONY : src/ft_sub.c.o
+
+src/ft_sub.i: src/ft_sub.c.i
+
+.PHONY : src/ft_sub.i
+
+# target to preprocess a source file
+src/ft_sub.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_sub.c.i
+.PHONY : src/ft_sub.c.i
+
+src/ft_sub.s: src/ft_sub.c.s
+
+.PHONY : src/ft_sub.s
+
+# target to generate assembly for a file
+src/ft_sub.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_sub.c.s
+.PHONY : src/ft_sub.c.s
+
+src/ft_xor.o: src/ft_xor.c.o
+
+.PHONY : src/ft_xor.o
+
+# target to build an object file
+src/ft_xor.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_xor.c.o
+.PHONY : src/ft_xor.c.o
+
+src/ft_xor.i: src/ft_xor.c.i
+
+.PHONY : src/ft_xor.i
+
+# target to preprocess a source file
+src/ft_xor.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_xor.c.i
+.PHONY : src/ft_xor.c.i
+
+src/ft_xor.s: src/ft_xor.c.s
+
+.PHONY : src/ft_xor.s
+
+# target to generate assembly for a file
+src/ft_xor.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_xor.c.s
+.PHONY : src/ft_xor.c.s
+
+src/ft_zjmp.o: src/ft_zjmp.c.o
+
+.PHONY : src/ft_zjmp.o
+
+# target to build an object file
+src/ft_zjmp.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_zjmp.c.o
+.PHONY : src/ft_zjmp.c.o
+
+src/ft_zjmp.i: src/ft_zjmp.c.i
+
+.PHONY : src/ft_zjmp.i
+
+# target to preprocess a source file
+src/ft_zjmp.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_zjmp.c.i
+.PHONY : src/ft_zjmp.c.i
+
+src/ft_zjmp.s: src/ft_zjmp.c.s
+
+.PHONY : src/ft_zjmp.s
+
+# target to generate assembly for a file
+src/ft_zjmp.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/src/ft_zjmp.c.s
+.PHONY : src/ft_zjmp.c.s
 
 src/function_check.o: src/function_check.c.o
 
@@ -2271,12 +2649,54 @@ help:
 	@echo "... src/error.o"
 	@echo "... src/error.i"
 	@echo "... src/error.s"
+	@echo "... src/ft_add.o"
+	@echo "... src/ft_add.i"
+	@echo "... src/ft_add.s"
+	@echo "... src/ft_aff.o"
+	@echo "... src/ft_aff.i"
+	@echo "... src/ft_aff.s"
 	@echo "... src/ft_and.o"
 	@echo "... src/ft_and.i"
 	@echo "... src/ft_and.s"
+	@echo "... src/ft_fork.o"
+	@echo "... src/ft_fork.i"
+	@echo "... src/ft_fork.s"
+	@echo "... src/ft_ld.o"
+	@echo "... src/ft_ld.i"
+	@echo "... src/ft_ld.s"
+	@echo "... src/ft_ldi.o"
+	@echo "... src/ft_ldi.i"
+	@echo "... src/ft_ldi.s"
+	@echo "... src/ft_lfork.o"
+	@echo "... src/ft_lfork.i"
+	@echo "... src/ft_lfork.s"
+	@echo "... src/ft_live.o"
+	@echo "... src/ft_live.i"
+	@echo "... src/ft_live.s"
+	@echo "... src/ft_lld.o"
+	@echo "... src/ft_lld.i"
+	@echo "... src/ft_lld.s"
+	@echo "... src/ft_lldi.o"
+	@echo "... src/ft_lldi.i"
+	@echo "... src/ft_lldi.s"
+	@echo "... src/ft_or.o"
+	@echo "... src/ft_or.i"
+	@echo "... src/ft_or.s"
+	@echo "... src/ft_st.o"
+	@echo "... src/ft_st.i"
+	@echo "... src/ft_st.s"
 	@echo "... src/ft_sti.o"
 	@echo "... src/ft_sti.i"
 	@echo "... src/ft_sti.s"
+	@echo "... src/ft_sub.o"
+	@echo "... src/ft_sub.i"
+	@echo "... src/ft_sub.s"
+	@echo "... src/ft_xor.o"
+	@echo "... src/ft_xor.i"
+	@echo "... src/ft_xor.s"
+	@echo "... src/ft_zjmp.o"
+	@echo "... src/ft_zjmp.i"
+	@echo "... src/ft_zjmp.s"
 	@echo "... src/function_check.o"
 	@echo "... src/function_check.i"
 	@echo "... src/function_check.s"

@@ -245,17 +245,101 @@ CMakeFiles/corewar.dir/src/error.c.o: ../libft/get_next_line.h
 CMakeFiles/corewar.dir/src/error.c.o: ../libft/libft.h
 CMakeFiles/corewar.dir/src/error.c.o: ../src/error.c
 
+CMakeFiles/corewar.dir/src/ft_add.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/ft_add.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/ft_add.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/ft_add.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/ft_add.c.o: ../src/ft_add.c
+
+CMakeFiles/corewar.dir/src/ft_aff.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/ft_aff.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/ft_aff.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/ft_aff.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/ft_aff.c.o: ../src/ft_aff.c
+
 CMakeFiles/corewar.dir/src/ft_and.c.o: ../include/corewar.h
 CMakeFiles/corewar.dir/src/ft_and.c.o: ../include/op.h
 CMakeFiles/corewar.dir/src/ft_and.c.o: ../libft/get_next_line.h
 CMakeFiles/corewar.dir/src/ft_and.c.o: ../libft/libft.h
 CMakeFiles/corewar.dir/src/ft_and.c.o: ../src/ft_and.c
 
+CMakeFiles/corewar.dir/src/ft_fork.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/ft_fork.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/ft_fork.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/ft_fork.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/ft_fork.c.o: ../src/ft_fork.c
+
+CMakeFiles/corewar.dir/src/ft_ld.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/ft_ld.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/ft_ld.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/ft_ld.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/ft_ld.c.o: ../src/ft_ld.c
+
+CMakeFiles/corewar.dir/src/ft_ldi.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/ft_ldi.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/ft_ldi.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/ft_ldi.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/ft_ldi.c.o: ../src/ft_ldi.c
+
+CMakeFiles/corewar.dir/src/ft_lfork.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/ft_lfork.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/ft_lfork.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/ft_lfork.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/ft_lfork.c.o: ../src/ft_lfork.c
+
+CMakeFiles/corewar.dir/src/ft_live.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/ft_live.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/ft_live.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/ft_live.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/ft_live.c.o: ../src/ft_live.c
+
+CMakeFiles/corewar.dir/src/ft_lld.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/ft_lld.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/ft_lld.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/ft_lld.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/ft_lld.c.o: ../src/ft_lld.c
+
+CMakeFiles/corewar.dir/src/ft_lldi.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/ft_lldi.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/ft_lldi.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/ft_lldi.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/ft_lldi.c.o: ../src/ft_lldi.c
+
+CMakeFiles/corewar.dir/src/ft_or.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/ft_or.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/ft_or.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/ft_or.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/ft_or.c.o: ../src/ft_or.c
+
+CMakeFiles/corewar.dir/src/ft_st.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/ft_st.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/ft_st.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/ft_st.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/ft_st.c.o: ../src/ft_st.c
+
 CMakeFiles/corewar.dir/src/ft_sti.c.o: ../include/corewar.h
 CMakeFiles/corewar.dir/src/ft_sti.c.o: ../include/op.h
 CMakeFiles/corewar.dir/src/ft_sti.c.o: ../libft/get_next_line.h
 CMakeFiles/corewar.dir/src/ft_sti.c.o: ../libft/libft.h
 CMakeFiles/corewar.dir/src/ft_sti.c.o: ../src/ft_sti.c
+
+CMakeFiles/corewar.dir/src/ft_sub.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/ft_sub.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/ft_sub.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/ft_sub.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/ft_sub.c.o: ../src/ft_sub.c
+
+CMakeFiles/corewar.dir/src/ft_xor.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/ft_xor.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/ft_xor.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/ft_xor.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/ft_xor.c.o: ../src/ft_xor.c
+
+CMakeFiles/corewar.dir/src/ft_zjmp.c.o: ../include/corewar.h
+CMakeFiles/corewar.dir/src/ft_zjmp.c.o: ../include/op.h
+CMakeFiles/corewar.dir/src/ft_zjmp.c.o: ../libft/get_next_line.h
+CMakeFiles/corewar.dir/src/ft_zjmp.c.o: ../libft/libft.h
+CMakeFiles/corewar.dir/src/ft_zjmp.c.o: ../src/ft_zjmp.c
 
 CMakeFiles/corewar.dir/src/function_check.c.o: ../include/corewar.h
 CMakeFiles/corewar.dir/src/function_check.c.o: ../include/op.h
