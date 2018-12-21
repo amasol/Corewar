@@ -12,32 +12,67 @@
 
 #include "../include/corewar.h"
 
+t_func				g_funclist[FNUM] =
+{
+	{0x1, ft_live},
+	{0x2, ft_ld},
+	{0x3, ft_st},
+	{0x4, ft_add},
+	{0x5, ft_sub},
+	{0x6, ft_and},
+	{0x7, ft_or},
+	{0x8, ft_xor},
+	{0x9, ft_zjmp},
+	{0xA, ft_ldi},
+	{0xB, ft_sti},
+	{0xC, ft_fork},
+	{0xD, ft_lld},
+	{0xE, ft_lldi},
+	{0xF, ft_lfork},
+	{0x10, ft_aff}
+};
+
+
+void				processing_function(t_val *bot, t_carriage *carriage)
+{
+	int i = -1;
+	int j = -1;
+	while (++j < bot->b_size_int)
+	{
+		i = -1;
+		while (++i < FNUM)
+			if (bot->executable_code[j] == g_funclist[i].command)
+				(g_funclist[i].fptr)(&bot->executable_code[i], carriage);
+	}
+}
+
+
 // как приминмать от войда и кастаить в то что нам нужно
 //  тут будет масив функций который будет опеределять в какой момент что выбрать
-int				processing_function(t_val *bot, t_carriage *carriage)
-{
-	t_val 			*tmp;
-	unsigned char	*ptr;
-	int 			i;
+// int				processing_function(t_val *bot, t_carriage *carriage)
+// {
+// 	t_val 			*tmp;
+// 	unsigned char	*ptr;
+// 	int 			i;
 
-	i = 0;
-	tmp = bot;
-//	printf("%d\n", carriage->position);
-
-
+// 	i = 0;
+// 	tmp = bot;
+// //	printf("%d\n", carriage->position);
 
 
-	if (bot->executable_code[i] == 0x1)
-	{
-		i += 1;
-		ft_live(&bot->executable_code[i], carriage);
-	}
 
-	else if (bot->executable_code[i] == 0x2)
-	{
-		i += 1;
-		ft_ld(&bot->executable_code[i], carriage);
-	}
+
+// 	if (bot->executable_code[i] == 0x1)
+// 	{
+// 		i += 1;
+// 		ft_live(&bot->executable_code[i], carriage);
+// 	}
+
+// 	else if (bot->executable_code[i] == 0x2)
+// 	{
+// 		i += 1;
+// 		ft_ld(&bot->executable_code[i], carriage);
+// 	}
 	/*
 	else if (bot->executable_code[i] == 0x3)
 	{
@@ -68,11 +103,11 @@ int				processing_function(t_val *bot, t_carriage *carriage)
 		ft_or(&bot->executable_code[i], carriage);
 	}
  */
-	else if (bot->executable_code[i] == 0x8)
-	{
-		i += 1;
-		ft_xor(&bot->executable_code[i], carriage);
-	}
+	// else if (bot->executable_code[i] == 0x8)
+	// {
+	// 	i += 1;
+	// 	ft_xor(&bot->executable_code[i], carriage);
+	// }
  /*
 	else if (bot->executable_code[i] == 0x9)
 	{
@@ -85,15 +120,15 @@ int				processing_function(t_val *bot, t_carriage *carriage)
 		ft_ldi(&bot->executable_code[i], carriage);
 	}
 */
-	else if (bot->executable_code[i] == 0xb)
-	{
-//		printf("%d\n", i);
-//		printf("%02hhx %02hhx %02hhx %02hhx\n", bot->executable_code[0],
-//			   bot->executable_code[1],
-//			   bot->executable_code[2],
-//			   bot->executable_code[3]);
-		i += ft_sti(bot->executable_code, carriage);
-	}
+// 	else if (bot->executable_code[i] == 0xb)
+// 	{
+// //		printf("%d\n", i);
+// //		printf("%02hhx %02hhx %02hhx %02hhx\n", bot->executable_code[0],
+// //			   bot->executable_code[1],
+// //			   bot->executable_code[2],
+// //			   bot->executable_code[3]);
+// 		i += ft_sti(bot->executable_code, carriage);
+// 	}
 
 
 /*
@@ -133,8 +168,8 @@ int				processing_function(t_val *bot, t_carriage *carriage)
 //	while (i < bot->b_size_int)
 //		printf("%02hhx ", bot->executable_code[i++]);
 //	printf("\n");
-	return (0);
-}
+// 	return (0);
+// }
 
 //void		search_func(t_carriage *carriage)
 //{

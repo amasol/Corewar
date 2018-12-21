@@ -43,8 +43,8 @@ t_val			s_file(char *bot)
 
 	if (read(vl->fd, vl->executable_code, vl->b_size_int) != vl->b_size_int)
 		error("Error validation7\n");
-	free(vl->executable_code);
-	free(vl);
+	//free(vl->executable_code);
+	//free(vl);
 /*
 	i = 0;
 	while (i < 4)

@@ -19,7 +19,7 @@ char	*ft_strtrim(char const *s)
 	int		i;
 	int		k;
 
-	if (s != '\0')
+	if (*s != '\0')
 	{
 		i = 0;
 		st = ft_strlen(s) - 1;

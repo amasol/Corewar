@@ -39,6 +39,16 @@ typedef struct		operations
 /*
 ** Validation
  */
+typedef struct		s_carriage t_carriage;
+
+typedef struct			s_func
+{
+	int					command;
+	void				(*fptr)(unsigned char *, t_carriage *);
+}						t_func;
+
+#define FNUM 16
+extern t_func					g_funclist[FNUM]; 
 
 typedef struct		s_val
 {
@@ -55,7 +65,7 @@ typedef struct		s_val
 /*
 ** Каретка
  */
-typedef struct		c_carriage
+struct		s_carriage
 {
 	unsigned int		register_id[REG_NUMBER];
 	int					position;
@@ -66,7 +76,7 @@ typedef struct		c_carriage
 	int					number_cycle;					// кол-во циклов, сколько ему осталось ждать до исполнения команды.
 	struct t_carriage	*next;
 	struct t_carriage	*last;
-}					t_carriage;
+};
 
 
 //int					main(void);
@@ -75,7 +85,7 @@ int					main(int argc, char **argv);
 t_val				s_file(char *bot);
 
 void				parsingflag(char *flag);
-int					processing_function(t_val *bot, t_carriage *carriage);
+void					processing_function(t_val *bot, t_carriage *carriage);
 //void				search_func(t_carriage *carriage);
 
 
@@ -92,13 +102,23 @@ size_t				shift_bit(unsigned char tmp, unsigned char tmp2);
 /*
 ** Virtual machine
  */
-void				ft_live(unsigned char *codage, t_carriage *carriage);
-void				ft_ld(unsigned char *codage, t_carriage *carriage);
 
-int				ft_sti(unsigned char *codage, t_carriage *carriage);
-
-void				ft_and(unsigned char *codage, t_carriage *carriage);
-void				ft_xor(unsigned char *codage, t_carriage *carriage);
+void	ft_add(unsigned char *codage, t_carriage *carriage);
+void	ft_aff(unsigned char *codage, t_carriage *carriage);
+void	ft_and(unsigned char *codage, t_carriage *carriage);
+void	ft_fork(unsigned char *codage, t_carriage *carriage);
+void	ft_ld(unsigned char *codage, t_carriage *carriage);
+void	ft_ldi(unsigned char *codage, t_carriage *carriage);
+void	ft_lfork(unsigned char *codage, t_carriage *carriage);
+void	ft_live(unsigned char *codage, t_carriage *carriage);
+void	ft_lld(unsigned char *codage, t_carriage *carriage);
+void	ft_lldi(unsigned char *codage, t_carriage *carriage);
+void	ft_or(unsigned char *codage, t_carriage *carriage);
+void	ft_st(unsigned char *codage, t_carriage *carriage);
+void	ft_sti(unsigned char *codage, t_carriage *carriage);
+void	ft_sub(unsigned char *codage, t_carriage *carriage);
+void	ft_xor(unsigned char *codage, t_carriage *carriage);
+void	ft_zjmp(unsigned char *codage, t_carriage *carriage);
 
 t_arr				get_cod(char c);
 

@@ -49,10 +49,11 @@ int			main(int argc, char **argv)
 		if(argv[bots][0] == '-')
 		{
 			printf("test key");
-//			parsingflag(argv[i]); // будет парсится те флаги которые входят
+			//parsingflag(argv[i]); // будет парсится те флаги которые входят
 		}
-		else
+		else{
 			bot[bots] = s_file(argv[bots]);
+		}
 		bots++;
 	}
 
@@ -83,18 +84,13 @@ int			main(int argc, char **argv)
 */
 
 
-
-
-
-
-
 //	first_carr = carriage;
 	carriage.position = -1;
 	bots = 1;
-	// возвращаем значение сдвинутой каретки
+//	возвращаем значение сдвинутой каретки
 	if (++carriage.position < MEM_SIZE)
 	{
-		carriage.position += processing_function(&bot[bots], &carriage);
+		processing_function(&bot[1], &carriage);
 	}
 
 
