@@ -45,14 +45,11 @@ int				ft_sti(unsigned char *map, t_carriage *carriage)
 	++i;
 	if (cod[0] == REG_CODE)
 		tmp[0] = carriage->register_id[map[i]];
+//	или
 //	++i;
 //	if (cod[0] == T_REG)
 //	carriage->register_id[3] = cod[0];
 
-
-
-
-//	printf("%02hhx\n", cod[1]);
 
 
 //	printf("%d\n", cod[0]);
@@ -66,8 +63,20 @@ int				ft_sti(unsigned char *map, t_carriage *carriage)
 //	printf("\n");
 
 	return (0);
-//	return (ft_atoi(cod[0]));
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

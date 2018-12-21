@@ -87,11 +87,11 @@ int				processing_function(t_val *bot, t_carriage *carriage)
 */
 	else if (bot->executable_code[i] == 0xb)
 	{
-		printf("%d\n", i);
-		printf("%02hhx %02hhx %02hhx %02hhx\n", bot->executable_code[0],
-			   bot->executable_code[1],
-			   bot->executable_code[2],
-			   bot->executable_code[3]);
+//		printf("%d\n", i);
+//		printf("%02hhx %02hhx %02hhx %02hhx\n", bot->executable_code[0],
+//			   bot->executable_code[1],
+//			   bot->executable_code[2],
+//			   bot->executable_code[3]);
 		i += ft_sti(bot->executable_code, carriage);
 	}
 
