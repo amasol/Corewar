@@ -47,7 +47,7 @@ typedef struct			s_func
 	void				(*fptr)(unsigned char *, t_carriage *);
 }						t_func;
 
-#define FNUM 16
+#define	FNUM 16
 extern t_func					g_funclist[FNUM]; 
 
 typedef struct		s_val
@@ -115,7 +115,7 @@ void	ft_lld(unsigned char *codage, t_carriage *carriage);
 void	ft_lldi(unsigned char *codage, t_carriage *carriage);
 void	ft_or(unsigned char *codage, t_carriage *carriage);
 void	ft_st(unsigned char *codage, t_carriage *carriage);
-void	ft_sti(unsigned char *codage, t_carriage *carriage);
+void	ft_sti(unsigned char *map, t_carriage *carriage);
 void	ft_sub(unsigned char *codage, t_carriage *carriage);
 void	ft_xor(unsigned char *codage, t_carriage *carriage);
 void	ft_zjmp(unsigned char *codage, t_carriage *carriage);

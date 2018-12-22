@@ -12,49 +12,30 @@
 
 #include "../include/corewar.h"
 
-
-// t_arr				get_cod(char c)
-// {
-// 	int 	i;
-// 	t_arr	arr;
-
-// 	i = 0;
-// 	while (i < 3)
-// 	{
-// 		if ((c >> (6 - 2 * i) & 3) == REG_CODE)
-// 			arr[i] = T_REG;
-// 		else if ((c >> (6 - 2 * i) & 3) == DIR_CODE)
-// 			arr[i] = T_DIR;
-// 		else if ((c >> (6 - 2 * i) & 3) == IND_CODE)
-// 			arr[i] = T_IND;
-// 		++i;
-// 	}
-// 	return (arr);
-// }
-
-// int				ft_sti(unsigned char *map, t_carriage *carriage)
-// {
-// 	t_arr	cod;
-// 	int		i;
-// 	int 	tmp[3];
-
-// 	 i = carriage->position + 1;
-// 	//	здесь знаю кол-во считаных байт, но дальше мне
-// 	// нужно использовать эти данный для отработки функции ...
-// 	cod = get_cod(map[i]);
-// 	++i;
-// 	if (cod[0] == REG_CODE)
-// 		tmp[0] = carriage->register_id[map[i]];
-// //	или
-// //	++i;
-// //	if (cod[0] == T_REG)
-// //	carriage->register_id[3] = cod[0];
+/*
+void	ft_sti(unsigned char *codage, t_carriage *carriage)
+ {
+ 	t_arr	cod;
+ 	int		i;
+ 	int 	tmp[3];
+//
+ 	 i = carriage->position + 1;
+ 	//	здесь знаю кол-во считаных байт, но дальше мне
+ 	// нужно использовать эти данный для отработки функции ...
+ 	cod = get_cod(codage[i]);
+ 	++i;
+ 	if (cod[0] == REG_CODE)
+ 		tmp[0] = carriage->register_id[codage[i]];
+ //	или
+ //	++i;
+ //	if (cod[0] == T_REG)
+ //	carriage->register_id[3] = cod[0];
+//
 
 
-
-// //	printf("%d\n", cod[0]);
-// //	printf("%d\n", cod[1]);
-// //	printf("%d\n", cod[2]);
+ 	printf("%d\n", cod[0]);
+ 	printf("%d\n", cod[1]);
+ 	printf("%d\n", cod[2]);
 
 
 
@@ -63,13 +44,11 @@
 // //	printf("\n");
 
 // 	return (0);
-// }
+ }
 
 
 
-
-
-
+*/
 
 
 

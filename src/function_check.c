@@ -12,6 +12,9 @@
 
 #include "../include/corewar.h"
 
+// 1)	написать бота с минимальным набором операций
+// 2)	op_tab -> реализовать!
+
 t_func				g_funclist[FNUM] =
 {
 	{0x1, ft_live},
@@ -32,89 +35,21 @@ t_func				g_funclist[FNUM] =
 	{0x10, ft_aff}
 };
 
-
 void				processing_function(t_val *bot, t_carriage *carriage)
 {
 	int i = -1;
-	int j = -1;
-	while (++j < bot->b_size_int)
-	{
-		i = -1;
+	int j = 0;
+//	while (++j < bot->b_size_int)
+//	{
+//		i = -1;
 		while (++i < FNUM)
 			if (bot->executable_code[j] == g_funclist[i].command)
 				(g_funclist[i].fptr)(&bot->executable_code[i], carriage);
-	}
+//	}
 }
 
-
-// как приминмать от войда и кастаить в то что нам нужно
-//  тут будет масив функций который будет опеределять в какой момент что выбрать
-// int				processing_function(t_val *bot, t_carriage *carriage)
-// {
-// 	t_val 			*tmp;
-// 	unsigned char	*ptr;
-// 	int 			i;
-
-// 	i = 0;
-// 	tmp = bot;
-// //	printf("%d\n", carriage->position);
-
-
-
-
-// 	if (bot->executable_code[i] == 0x1)
-// 	{
-// 		i += 1;
-// 		ft_live(&bot->executable_code[i], carriage);
-// 	}
-
-// 	else if (bot->executable_code[i] == 0x2)
-// 	{
-// 		i += 1;
-// 		ft_ld(&bot->executable_code[i], carriage);
-// 	}
-	/*
-	else if (bot->executable_code[i] == 0x3)
-	{
-		i += 1;
-		ft_st(&bot->executable_code[i], carriage);
-	}
-	else if (bot->executable_code[i] == 0x4)
-	{
-		i += 1;
-		ft_add(&bot->executable_code[i], carriage);
-	}
-	else if (bot->executable_code[i] == 0x5)
-	{
-		i += 1;
-		ft_sub(&bot->executable_code[i], carriage);
-	}
-*/
-/*
-	if (bot->executable_code[i] == 0x6)
-	{
-		i += 1;
-		ft_and(&bot->executable_code[i], carriage);
-	}
-
-	else if (bot->executable_code[i] == 0x7)
-	{
-		i += 1;
-		ft_or(&bot->executable_code[i], carriage);
-	}
- */
-	// else if (bot->executable_code[i] == 0x8)
-	// {
-	// 	i += 1;
-	// 	ft_xor(&bot->executable_code[i], carriage);
-	// }
- /*
-	else if (bot->executable_code[i] == 0x9)
-	{
-		i += 1;
-		ft_zjmp(&bot->executable_code[i], carriage);
-	}
-	else if (bot->executable_code[i] == 0xa)
+/* // пример как было
+	if (bot->executable_code[i] == 0xa)
 	{
 		i += 1;
 		ft_ldi(&bot->executable_code[i], carriage);

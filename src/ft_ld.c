@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "../include/corewar.h"
-
+/*
 void				ft_ld(unsigned char *codage, t_carriage *carriage)
 {
 	t_arr	test2;
@@ -24,3 +24,4 @@ void				ft_ld(unsigned char *codage, t_carriage *carriage)
 	printf("%d\n", test2[1]);
 	printf("%d\n", test2[2]);
 }
+*/
