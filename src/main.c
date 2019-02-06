@@ -43,16 +43,16 @@ int			main(int argc, char **argv)
 	t_carriage	carriage;
 //	t_carriage	first_carr;
 
-	bots = 1;
-	while (argv[bots] && argc < 4)
+	bots = 0;
+	while (argv[bots + 1] && argc <= 5)
 	{
-		if(argv[bots][0] == '-')
+		if(argv[bots + 1][0] == '-')
 		{
 			printf("test key");
 			//parsingflag(argv[i]); // будет парсится те флаги которые входят
 		}
 		else{
-			bot[bots] = s_file(argv[bots]);
+			bot[bots] = s_file(argv[bots + 1]);
 		}
 		bots++;
 	}
@@ -85,23 +85,37 @@ int			main(int argc, char **argv)
 
 
 //	first_carr = carriage;
-	carriage.position = -1;
-	bots = 1;
-//	возвращаем значение сдвинутой каретки
-	if (++carriage.position < MEM_SIZE)
+// 	carriage.position = -1;
+// 	bots = 1;
+// //	возвращаем значение сдвинутой каретки
+// 	if (++carriage.position < MEM_SIZE)
+// 	{
+// 		processing_function(&bot[1], &carriage);
+// 	}
+
+	ft_bzero(g_map, MEM_SIZE);
+	i = -1;
+	while (++i < bots)
 	{
-		processing_function(&bot[1], &carriage);
+		ft_memcpy(g_map + i * MEM_SIZE / bots, bot[i].executable_code, bot[i].b_size_int);
+
 	}
+	i = -1;
 
+	// while (++i < bot[1].b_size_int)
+	// {
+	// 	printf("%x ", bot[1].executable_code[i]);
+	// }
+	while (++i < MEM_SIZE)
+	{
+		if (g_map[i])
+			printf("%0.2x ", g_map[i]);
+		else
+			printf(".. ");
+	}
+	printf("\n");
 
-//	ft_bzero(g_map, MEM_SIZE);
-//	i = -1;
-//	while (++i < bots)
-//	{
-//		ft_memcpy(g_map + i * MEM_SIZE / bots, bot[i].executable_code, bot[i].b_size_int);
-//
-//	}
-
+	printf("i = %d\n", i);
 
 
 
