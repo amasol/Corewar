@@ -39,7 +39,7 @@ typedef struct		operations
 /*
 ** Validation
  */
-typedef struct		s_carriage t_carriage;
+typedef struct			s_carriage t_carriage;
 
 typedef struct			s_func
 {
@@ -48,24 +48,24 @@ typedef struct			s_func
 }						t_func;
 
 #define	FNUM 16
-extern t_func					g_funclist[FNUM]; 
+extern t_func			g_funclist[FNUM];
 
-typedef struct		s_val
+typedef struct			s_val
 {
-//	int						id;
-	unsigned char 			m_header[4];
-	unsigned char 			b_comment[2048];
-	unsigned char 			bot_name[PROG_NAME_LENGTH];
-	unsigned char 			*executable_code;
-	unsigned char 			b_size[4];
-	size_t					b_size_int;
-	int						fd;
-}					t_val;
+//	int					id;
+	unsigned char 		m_header[4];
+	unsigned char 		b_comment[2048];
+	unsigned char 		bot_name[PROG_NAME_LENGTH];
+	unsigned char 		*executable_code;
+	unsigned char 		b_size[4];
+	size_t				b_size_int;
+	int					fd;
+}						t_val;
 
 /*
 ** Каретка
  */
-struct		s_carriage
+struct					s_carriage
 {
 	unsigned int		register_id[REG_NUMBER];
 	int					position;
@@ -78,14 +78,23 @@ struct		s_carriage
 	struct t_carriage	*last;
 };
 
+//					параметры игроков
+struct					s_game_parameter
+{
+	int					live_bot; //игрок который последний раз сказал что он жив
+};
+
+
+
+
 
 //int					main(void);
 int					main(int argc, char **argv);
 
 t_val				s_file(char *bot);
 
-void				parsingflag(char *flag);
-void					processing_function(t_val *bot, t_carriage *carriage);
+//void				parsingflag(char *flag);
+//void				processing_function(t_val *bot, t_carriage *carriage);
 //void				search_func(t_carriage *carriage);
 
 
@@ -103,6 +112,14 @@ size_t				shift_bit(unsigned char tmp, unsigned char tmp2);
 ** Virtual machine
  */
 
+
+
+
+
+
+/*
+** Functions
+ */
 void	ft_add(unsigned char *codage, t_carriage *carriage);
 void	ft_aff(unsigned char *codage, t_carriage *carriage);
 void	ft_and(unsigned char *codage, t_carriage *carriage);
@@ -119,6 +136,9 @@ void	ft_sti(unsigned char *map, t_carriage *carriage);
 void	ft_sub(unsigned char *codage, t_carriage *carriage);
 void	ft_xor(unsigned char *codage, t_carriage *carriage);
 void	ft_zjmp(unsigned char *codage, t_carriage *carriage);
+
+
+
 
 t_arr				get_cod(char c);
 

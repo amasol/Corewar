@@ -60,30 +60,6 @@ int			main(int argc, char **argv)
 	if (argc >= 6)
 		error("many arguments");
 
-/*
-	i = 0;
-	while (i < 4)
-		printf("%x", bot[1].m_header[i++]);
-	i = 0;
-	printf("\n");
-	while (i < PROG_NAME_LENGTH)
-		printf("%x", bot[1].bot_name[i++]);
-	printf("\n");
-	i = 0;
-	while (i < 4)
-		printf("%x", bot[1].b_size[i++]);
-	printf("\n");
-	i = 0;
-	while (i < COMMENT_LENGTH)
-		printf("%x", bot[1].b_comment[i++]);
-	printf("\n");
-	i = 0;
-	while (i < bot[1].b_size_int)
-		printf("%x", bot[1].executable_code[i++]);
-	printf("\n");
-*/
-
-
 //	first_carr = carriage;
 // 	carriage.position = -1;
 // 	bots = 1;
@@ -95,17 +71,25 @@ int			main(int argc, char **argv)
 
 	ft_bzero(g_map, MEM_SIZE);
 	i = -1;
+
+
+	int *j;
+//
+	j = malloc(sizeof(int));
 	while (++i < bots)
 	{
 		ft_memcpy(g_map + i * MEM_SIZE / bots, bot[i].executable_code, bot[i].b_size_int);
-
+//		printf("position = %d\n", i * MEM_SIZE / bots);
+//		*j = i * MEM_SIZE / bots ;
+//		printf("test one -> %d\n", *j);
 	}
-	i = -1;
 
-	// while (++i < bot[1].b_size_int)
-	// {
-	// 	printf("%x ", bot[1].executable_code[i]);
-	// }
+//	после создания карты, мы должны запустить наш цыкл и расставить дефолтные значения
+
+
+/*
+//	print map
+ 	 i = -1;
 	while (++i < MEM_SIZE)
 	{
 		if (g_map[i])
@@ -116,10 +100,11 @@ int			main(int argc, char **argv)
 	printf("\n");
 
 	printf("i = %d\n", i);
+*/
 
 
 
-	//  разбил ботами карту на столько частей сколько нужно!
+
 	//	использовать функцию processing_function(bot, &carriage);
 	// как пользоваться структоруй op.c
 
