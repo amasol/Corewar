@@ -5,7 +5,7 @@ CC=clang
 #CFLAGS = -Wall -Wextra -Werror -Iinclude -Ilibft
 LIBFT = libft/libft.a
 
-SRC = main.c error.c shift_bit.c save_bot.c function_check.c    ft_add.c\
+SRC = main.c error.c shift_bit.c save_bot.c function_check.c ft_add.c\
       op.c \
 #      ft_sti.c  ft_and.c  ft_aff.c ft_fork.c ft_ld.c ft_ldi.c \
 #     ft_lfork.c ft_live.c ft_lld.c ft_lldi.c ft_or.c ft_st.c ft_sub.c ft_xor.c \

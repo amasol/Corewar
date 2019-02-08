@@ -49,6 +49,7 @@ typedef struct			s_func
 
 #define	FNUM 16
 extern t_func			g_funclist[FNUM];
+unsigned char			g_map[MEM_SIZE];
 
 typedef struct			s_val
 {
@@ -72,10 +73,9 @@ struct					s_carriage
 	int					carry;
 	int					player_id;			// номер игрока который его породил.
 	int					alive;				// живой или нет 0 || 1.
-	int					execution_team;		// команду которую он исполняет.
-	int					number_cycle;					// кол-во циклов, сколько ему осталось ждать до исполнения команды.
-	struct t_carriage	*next;
-	struct t_carriage	*last;
+	int					exec_command;		// команду которую он исполняет.
+	int					number_cycle;		// кол-во циклов, сколько ему осталось ждать до исполнения команды.
+	t_carriage			*next;
 };
 
 //					параметры игроков

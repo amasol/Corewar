@@ -32,18 +32,51 @@ void parsingFlag(char *arg)
 
 */
 
-unsigned char	g_map[MEM_SIZE];
+/**
+	=== new_carriage ===
+	parent - если значение -1, значит это новая каретка, 
+	иначе ищем каретку, которая порадила новую карету и добавляем новую после нее
+	что бы передать ход новой каретке
+
+	если не хватит переменных передаваемых в функцию, 
+	вынести вставку порожденной каретки в другую функцию
+**/
+
+void	new_carriage(t_carriage **carriage, int pos, int id, int parent)
+{
+	t_carriage *new;
+	t_carriage *iter;
+
+	new = malloc(sizeof(t_carriage));
+	new->position = pos;
+	new->carry = 0; // ?
+	new->player_id = id;
+	new->alive = 0; // ?
+	new->exec_command = 0; // ?
+	new->number_cycle = 0; // ?
+	new->next = NULL;
+	if (!(*carriage))
+		*carriage = new;
+	else
+	{
+		iter = *carriage;
+		while (iter->next && iter->player_id != parent)
+			iter = iter->next;
+		new->next = iter->next;
+		iter->next = new;
+	}
+}
+
 
 int			main(int argc, char **argv)
 {
 	int 		bots;
-	t_val		bot[4];
 	int i;
-//	t_val		bot;
-	t_carriage	carriage;
-//	t_carriage	first_carr;
+	t_val		bot[4];
+	t_carriage	*carriage;
 
 	bots = 0;
+	carriage = NULL;
 	while (argv[bots + 1] && argc <= 5)
 	{
 		if(argv[bots + 1][0] == '-')
@@ -51,14 +84,25 @@ int			main(int argc, char **argv)
 			printf("test key");
 			//parsingflag(argv[i]); // будет парсится те флаги которые входят
 		}
-		else{
+		else
 			bot[bots] = s_file(argv[bots + 1]);
-		}
 		bots++;
 	}
-
 	if (argc >= 6)
 		error("many arguments");
+
+
+	ft_bzero(g_map, MEM_SIZE);
+
+	i = -1;
+	while (++i < bots)
+	{
+		new_carriage(&carriage, i * MEM_SIZE / bots, i, -1); // carriage initialization
+		ft_memcpy(g_map + i * MEM_SIZE / bots, bot[i].executable_code, bot[i].b_size_int);
+
+		/* print posotion */
+		//printf("position = %d, size = %zu\n", i * MEM_SIZE / bots, bot[i].b_size_int);
+	}
 
 //	first_carr = carriage;
 // 	carriage.position = -1;
@@ -68,28 +112,13 @@ int			main(int argc, char **argv)
 // 	{
 // 		processing_function(&bot[1], &carriage);
 // 	}
-
-	ft_bzero(g_map, MEM_SIZE);
-	i = -1;
-
-
-	int *j;
-//
-	j = malloc(sizeof(int));
-	while (++i < bots)
-	{
-		ft_memcpy(g_map + i * MEM_SIZE / bots, bot[i].executable_code, bot[i].b_size_int);
-//		printf("position = %d\n", i * MEM_SIZE / bots);
-//		*j = i * MEM_SIZE / bots ;
-//		printf("test one -> %d\n", *j);
-	}
-
+	
 //	после создания карты, мы должны запустить наш цыкл и расставить дефолтные значения
 
 
-/*
-//	print map
- 	 i = -1;
+/*******************************************************************************/
+	//	print map
+ 	i = -1;
 	while (++i < MEM_SIZE)
 	{
 		if (g_map[i])
@@ -98,11 +127,17 @@ int			main(int argc, char **argv)
 			printf(".. ");
 	}
 	printf("\n");
+/*******************************************************************************/
 
-	printf("i = %d\n", i);
-*/
-
-
+/*******************************************************************************/
+	//print carriage info
+	while (carriage)
+	{
+		printf("carriage:    id = %d, pos = %d\n", carriage->player_id, carriage->position);
+		printf("car commnd = %0.2x\n", g_map[carriage->position]);
+		carriage = carriage->next;
+	}
+/*******************************************************************************/
 
 
 	//	использовать функцию processing_function(bot, &carriage);
