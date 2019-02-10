@@ -51,6 +51,8 @@ typedef struct			s_func
 extern t_func			g_funclist[FNUM];
 unsigned char			g_map[MEM_SIZE];
 
+
+
 typedef struct			s_val
 {
 //	int					id;
@@ -106,7 +108,7 @@ void				error(char *str);
 
 
 //unsigned			shift_bit(unsigned char *buff);  // вытаскивание наших аргументов
-size_t				shift_bit(unsigned char tmp, unsigned char tmp2);
+size_t          shift_bit(unsigned char size []);
 
 /*
 ** Virtual machine

@@ -42,6 +42,31 @@ void parsingFlag(char *arg)
 	вынести вставку порожденной каретки в другую функцию
 **/
 
+// void	new_carriage(t_carriage **carriage, int pos, int id, int parent)
+// {
+// 	t_carriage *new;
+// 	t_carriage *iter;
+
+// 	new = malloc(sizeof(t_carriage));
+// 	new->position = pos;
+// 	new->carry = 0; // ?
+// 	new->player_id = id;
+// 	new->alive = 0; // ?
+// 	new->exec_command = 0; // ?
+// 	new->number_cycle = 0; // ?
+// 	new->next = NULL;
+// 	if (!(*carriage))
+// 		*carriage = new;
+// 	else
+// 	{
+// 		iter = *carriage;
+// 		while (iter->next && iter->player_id != parent)
+// 			iter = iter->next;
+// 		new->next = iter->next;
+// 		iter->next = new;
+// 	}
+// }
+
 void	new_carriage(t_carriage **carriage, int pos, int id, int parent)
 {
 	t_carriage *new;
@@ -59,14 +84,10 @@ void	new_carriage(t_carriage **carriage, int pos, int id, int parent)
 		*carriage = new;
 	else
 	{
-		iter = *carriage;
-		while (iter->next && iter->player_id != parent)
-			iter = iter->next;
-		new->next = iter->next;
-		iter->next = new;
+		new->next = *carriage;
+		*carriage = new;
 	}
 }
-
 
 int			main(int argc, char **argv)
 {

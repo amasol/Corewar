@@ -33,7 +33,7 @@ t_val			s_file(char *bot)
 	if (read(vl->fd, vl->b_size, 4) != 4)
 		error("Error validation4\n");
 	else
-		vl->b_size_int = shift_bit(vl->b_size[2], vl->b_size[3]); // нужно передать чтение
+		vl->b_size_int = shift_bit(vl->b_size); // нужно передать чтение
 	if (read(vl->fd, vl->b_comment, COMMENT_LENGTH) != COMMENT_LENGTH)
 		error("Error validation5\n");
 	if (read(vl->fd, chlak, 4) != 4)
@@ -45,28 +45,28 @@ t_val			s_file(char *bot)
 		error("Error validation7\n");
 	//free(vl->executable_code);
 	//free(vl);
-/*
-	i = 0;
+
+	/*i = 0;
 	while (i < 4)
 		printf("%x", vl->m_header[i++]);
 	i = 0;
 	printf("\n");
 	while (i < PROG_NAME_LENGTH)
 		printf("%x", vl->bot_name[i++]);
-	printf("\n");
-	i = 0;
-	while (i < 4)
-		printf("%x", vl->b_size[i++]);
-	printf("\n");
-	i = 0;
-	while (i < COMMENT_LENGTH)
-		printf("%x", vl->b_comment[i++]);
-	printf("\n");
-	i = 0;
-	while (i < vl->b_size_int)
-		printf("%x", vl->executable_code[i++]);
-	printf("\n");
-*/
+	printf("\n");*/
+	// int j = 0;
+	// while (j < 4)
+	// 	printf("test ->> %x\n", vl->b_size[j++]);
+	// printf("\n");
+	// i = 0;
+	// while (i < COMMENT_LENGTH)
+	// 	printf("%x", vl->b_comment[i++]);
+	// printf("\n");
+	// i = 0;
+	// while (i < vl->b_size_int)
+	// 	printf("%x", vl->executable_code[i++]);
+	// printf("\n");
+
 	return (vl[i]);
 }
 
