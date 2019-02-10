@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   shift_bit.c                                        :+:      :+:    :+:   */
+/*   bot_size.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amasol <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,7 +12,7 @@
 
 #include "../include/corewar.h"
 
-size_t		shift_bit(unsigned char size [])
+size_t		bot_size(unsigned char size [])
 {
 	return ((size[0] << 24) | (size[1] << 16) | (size[2] << 8) | size[3]);
 }

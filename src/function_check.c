@@ -35,7 +35,7 @@ t_func				g_funclist[FNUM] =
 	{0x10, ft_aff}
 };
 
-void				processing_function(t_val *bot, t_carriage *carriage)
+void				processing_function(t_bot *bot, t_carriage *carriage)
 {
 	int i = -1;
 	int j = 0;
@@ -43,8 +43,8 @@ void				processing_function(t_val *bot, t_carriage *carriage)
 //	{
 //		i = -1;
 		while (++i < FNUM)
-			if (bot->executable_code[j] == g_funclist[i].command)
-				(g_funclist[i].fptr)(&bot->executable_code[i], carriage);
+			if (bot->exec_code[j] == g_funclist[i].command)
+				(g_funclist[i].fptr)(&bot->exec_code[i], carriage);
 //	}
 }
 
@@ -66,39 +66,6 @@ void				processing_function(t_val *bot, t_carriage *carriage)
 // 	}
 
 
-/*
-	else if (bot->executable_code[i] == 0xc)
-	{
-		i += 1;
-		ft_fork(&bot->executable_code[i], carriage);
-	}
-	else if (bot->executable_code[i] == 0xd)
-	{
-		i += 1;
-		ft_lld(&bot->executable_code[i], carriage);
-	}
-	else if (bot->executable_code[i] == 0xe)
-	{
-		i += 1;
-		ft_lldi(&bot->executable_code[i], carriage);
-	}
-	else if (bot->executable_code[i] == 0xf)
-	{
-		i += 1;
-		ft_lfork(&bot->executable_code[i], carriage);
-	}
-	else if (bot->executable_code[i] == 0x10)
-	{
-		i += 1;
-		ft_aff(&bot->executable_code[i], carriage);
-	}
-
-*/
-
-
-
-
-
 //			печать
 //	while (i < bot->b_size_int)
 //		printf("%02hhx ", bot->executable_code[i++]);
@@ -111,45 +78,3 @@ void				processing_function(t_val *bot, t_carriage *carriage)
 //
 //}
 
-
-//		пример
-/*
-#include <stdio.h>
-
-
-void func1(void)
-{
-	printf("func1\n");
-}
-
-void func2(void)
-{
-	printf("func2\n");
-}
-
-void func3(void)
-{
-	printf("func3\n");
-}
-
-typedef struct functions
-{
-	void (*func)(void);
-}               funcStruct;
-
-
-int main(void)
-{
-	funcStruct f;
-	f.func = &func1;
-	f.func();
-
-//    f.func = &func2;
-//    f.func();
-//
-//    f.func = &func3;
-//    f.func();
-
-	return (0);
-}
-*/

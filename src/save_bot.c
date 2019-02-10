@@ -14,36 +14,37 @@
 
 
 
-t_val			s_file(char *bot)
+t_bot			read_file(char *bot)
 {
-	t_val			*vl;
+	t_bot			*vl;
 	unsigned char	chlak[4];
 	int				i;
+	int 			fd;
 
 	i = 0;
-	vl = (t_val *)malloc(sizeof(t_val));
-	vl->fd = open(bot, O_RDONLY);
+	vl = (t_bot *)malloc(sizeof(t_bot));
+	fd = open(bot, O_RDONLY);
 
-	if (read(vl->fd, vl->m_header, 4) != 4)
-		error("Error validation1\n");
-	if (read(vl->fd, vl->bot_name, PROG_NAME_LENGTH) != PROG_NAME_LENGTH)
-		error("Error validation2\n");
-	if (read(vl->fd, chlak, 4) != 4)
-		error("Error validation3\n");
-	if (read(vl->fd, vl->b_size, 4) != 4)
-		error("Error validation4\n");
+	if (read(fd, vl->m_header, 4) != 4)
+		ft_error("Error validation1\n");
+	if (read(fd, vl->bot_name, PROG_NAME_LENGTH) != PROG_NAME_LENGTH)
+		ft_error("Error validation2\n");
+	if (read(fd, chlak, 4) != 4)
+		ft_error("Error validation3\n");
+	if (read(fd, vl->b_size, 4) != 4)
+		ft_error("Error validation4\n");
 	else
-		vl->b_size_int = shift_bit(vl->b_size); // нужно передать чтение
-	if (read(vl->fd, vl->b_comment, COMMENT_LENGTH) != COMMENT_LENGTH)
-		error("Error validation5\n");
-	if (read(vl->fd, chlak, 4) != 4)
-		error("Error validation6\n");
+		vl->size = bot_size(vl->b_size);
+	if (read(fd, vl->b_comment, COMMENT_LENGTH) != COMMENT_LENGTH)
+		ft_error("Error validation5\n");
+	if (read(fd, chlak, 4) != 4)
+		ft_error("Error validation6\n");
 
-	vl->executable_code = (unsigned char *)malloc(sizeof(unsigned char) * vl->b_size_int + 1);
+	vl->exec_code = (UC *)malloc(sizeof(UC) * vl->size + 1);
 
-	if (read(vl->fd, vl->executable_code, vl->b_size_int) != vl->b_size_int)
-		error("Error validation7\n");
-	//free(vl->executable_code);
+	if (read(fd, vl->exec_code, vl->size) != vl->size)
+		ft_error("Error validation7\n");
+	//free(vl->exec_code);
 	//free(vl);
 
 	/*i = 0;
@@ -63,8 +64,8 @@ t_val			s_file(char *bot)
 	// 	printf("%x", vl->b_comment[i++]);
 	// printf("\n");
 	// i = 0;
-	// while (i < vl->b_size_int)
-	// 	printf("%x", vl->executable_code[i++]);
+	// while (i < vl->size)
+	// 	printf("%x", vl->exec_code[i++]);
 	// printf("\n");
 
 	return (vl[i]);
@@ -85,7 +86,7 @@ t_val			s_file(char *bot)
 	unsigned char 	mysar[4];
 	//	vl->next = NULL;
 
-//	vl->fd = open("zork.cor", O_RDONLY);
+//	fd = open("zork.cor", O_RDONLY);
 
 	vl.fd = open(bot, O_RDONLY);
 	if (read(vl.fd, vl.m_header, 4) != 4)

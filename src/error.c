@@ -12,10 +12,11 @@
 
 #include "../include/corewar.h"
 
-void            error(char *str)
+void            ft_error(char *str)
 {
 //	ft_putstr("Error validation\n");
 	ft_putstr(str);
+	ft_putstr("\n");
 	exit(1);
 }
 

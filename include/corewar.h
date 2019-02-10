@@ -15,36 +15,24 @@
 
 # include "../libft/libft.h"
 # include "op.h"
-
 # include <stdio.h>
+# include <ncurses.h>
 
-typedef unsigned char	t_arr __attribute__((vector_size(sizeof(unsigned char) * 3)));
-/*
-typedef struct		operations
-{
-//	void (*func)(void);
-	void (*ft_sti)(&codage, &carriage);
-}					operations;
-*/
 
-//# include <math.h>
-
-//# define BUFF_S 10000
-
-// структура по которой мы будем опеределять нашу функцию
-//typedef struct		s_op
-//{
-//}					t_op;
-
-/*
-** Validation
- */
+#define UC unsigned char
+typedef UC				t_arr __attribute__((vector_size(sizeof(UC) * 3)));
 typedef struct			s_carriage t_carriage;
+typedef struct			s_bot t_bot;
+
+
+/*
+** Function Dispatcher
+*/
 
 typedef struct			s_func
 {
 	int					command;
-	void				(*fptr)(unsigned char *, t_carriage *);
+	void				(*fptr)(UC *, t_carriage *);
 }						t_func;
 
 #define	FNUM 16
@@ -53,21 +41,21 @@ unsigned char			g_map[MEM_SIZE];
 
 
 
-typedef struct			s_val
+struct					s_bot
 {
 //	int					id;
 	unsigned char 		m_header[4];
 	unsigned char 		b_comment[2048];
 	unsigned char 		bot_name[PROG_NAME_LENGTH];
-	unsigned char 		*executable_code;
+	unsigned char 		*exec_code;
 	unsigned char 		b_size[4];
-	size_t				b_size_int;
-	int					fd;
-}						t_val;
+	size_t				size;
+};
 
 /*
 ** Каретка
  */
+
 struct					s_carriage
 {
 	unsigned int		register_id[REG_NUMBER];
@@ -87,13 +75,7 @@ struct					s_game_parameter
 };
 
 
-
-
-
-//int					main(void);
-int					main(int argc, char **argv);
-
-t_val				s_file(char *bot);
+t_bot				read_file(char *bot);
 
 //void				parsingflag(char *flag);
 //void				processing_function(t_val *bot, t_carriage *carriage);
@@ -103,18 +85,15 @@ t_val				s_file(char *bot);
 /*
 ** Error validation
  */
-void				error(char *str);
+void				ft_error(char *str);
 
 
 
-//unsigned			shift_bit(unsigned char *buff);  // вытаскивание наших аргументов
-size_t          shift_bit(unsigned char size []);
+size_t          	bot_size(unsigned char size []);
 
 /*
 ** Virtual machine
  */
-
-
 
 
 
