@@ -14,7 +14,7 @@
 
 
 
-t_bot			read_file(char *bot)
+t_bot			read_file(char *bot, int bot_id)
 {
 	t_bot			*vl;
 	unsigned char	chlak[4];
@@ -41,7 +41,7 @@ t_bot			read_file(char *bot)
 		ft_error("Error validation6\n");
 
 	vl->exec_code = (UC *)malloc(sizeof(UC) * vl->size + 1);
-
+	vl->id = bot_id;
 	if (read(fd, vl->exec_code, vl->size) != vl->size)
 		ft_error("Error validation7\n");
 	//free(vl->exec_code);

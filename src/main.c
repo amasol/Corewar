@@ -42,7 +42,7 @@ int		parse_args(int ac, char **av, t_bot *bot, int i)
 			//parsingflag(av[i]); // будет парсится те флаги которые входят
 		}
 		else
-			bot[i - 1] = read_file(av[i]);
+			bot[i - 1] = read_file(av[i], i);
 		i++;
 	}
 	return (i - 1);
@@ -110,31 +110,54 @@ int			main(int argc, char **argv)
 	// }
 	// printf("\n");
 /*******************************************************************************/
-
+	int j = bot[0].size;
+	printf("size = %d ", j);
 	initscr();
-	raw();
+	
+	//raw();
 	start_color();
-	init_pair(1, 2, 0);
-	init_pair(2, 4, 0);
+	//init_pair(1, 3, 0); //Yellow, 11 bkgd
+	// init_pair(1, 2, 0); // Green, 10 bkgd
+	// init_pair(1, 4, 0); // Blue 12, 4
+	init_pair(1, 6, 0); // CYAN
+	// init_pair(1, 9, 0); // Red, 9 bkgd
+	init_pair(2, 8, 0); //Bright Black ("Gray")
 	//attron(COLOR_PAIR(1));
+	wresize(stdscr, 74, 192); //set screen size
+	//resizeterm(100, 200);
+	int i = 0;
+	// while (++i < MEM_SIZE)
+	// {
+	// 	if (g_map[i])
+	// 	{
+	// 		attron(COLOR_PAIR(1));
+	// 		printw("%0.2x ", g_map[i]);
+	// 		attroff(COLOR_PAIR(1));
+	// 	}
+	// 	else
+	// 	{
+	// 		attron(COLOR_PAIR(2));
+	// 		printw("00 ");
+	// 		attron(COLOR_PAIR(2));
+	// 	}
+	// }
+	// printf("\n");
 
-	int i = -1;
-	while (++i < MEM_SIZE)
+	while (i < MEM_SIZE) // 74 rows and 192 columns
 	{
-		if (g_map[i])
+		while (j > 0)
 		{
-			attron(COLOR_PAIR(1));
-			printw("%0.2x ", g_map[i]);
-			attroff(COLOR_PAIR(1));
+			attron(COLOR_PAIR(bot[0].id));
+			printw("%0.2x ", g_map[i++]);
+			attroff(COLOR_PAIR(bot[0].id));
+			j--;
 		}
-		else
-		{
-			attron(COLOR_PAIR(2));
-			printw("00 ");
-			attron(COLOR_PAIR(2));
-		}
+		attron(COLOR_PAIR(2));
+		printw("%0.2x ", g_map[i++]);
+		attron(COLOR_PAIR(2));
+
 	}
-	printf("\n");
+	//printf("\n");
 	int ch = getch(); // 	WHILE NOT 'Q' refresh()
 	//attroff(COLOR_PAIR(1));
 	
