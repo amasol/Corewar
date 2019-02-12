@@ -22,7 +22,7 @@
 # define IND_CODE				3
 
 # define MAX_ARGS_NUMBER		4
-# define MAX_PLAYERS			4
+# define MAX_PLAYERS			8
 # define MEM_SIZE				(4096)
 # define IDX_MOD				(512)
 # define CHAMP_MAX_SIZE			(MEM_SIZE / 6)

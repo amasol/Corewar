@@ -44,6 +44,7 @@ unsigned char			g_map[MEM_SIZE];
 struct					s_bot
 {
 	int					id;
+	int					position;
 	unsigned char 		m_header[4];
 	unsigned char 		b_comment[2048];
 	unsigned char 		bot_name[PROG_NAME_LENGTH];
@@ -95,7 +96,8 @@ size_t          	bot_size(unsigned char size []);
 ** Virtual machine
  */
 
-
+void		print_map(t_bot bot[], int bots, t_carriage *carriage);
+void		init_colors();
 
 
 /*

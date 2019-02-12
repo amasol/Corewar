@@ -57,7 +57,7 @@ void	new_carriage(t_carriage **carriage, int pos, int id, int parent)
 		ft_error("Memory allocation error");
 	new->position = pos;
 	new->carry = 0; // ?
-	new->player_id = id;
+	new->player_id = id + 1;
 	new->alive = 0; // ?
 	new->exec_command = 0; // ?
 	new->number_cycle = 0; // ?
@@ -79,10 +79,12 @@ void		fill_map(t_carriage **carriage, t_bot bot[], int bots)
 	ft_bzero(g_map, MEM_SIZE);
 	while (++i < bots)
 	{
-		new_carriage(carriage, i * MEM_SIZE / bots, i, -1); // carriage initialization
+		new_carriage(carriage, i * MEM_SIZE / bots, i, -1);
 		ft_memcpy(g_map + i * MEM_SIZE / bots, bot[i].exec_code, bot[i].size);
+		bot[i].position = i * MEM_SIZE / bots;
 	}	
 }
+
 
 int			main(int argc, char **argv)
 {
@@ -96,82 +98,32 @@ int			main(int argc, char **argv)
 	bots = parse_args(argc, argv, &(*bot), 1);
 	fill_map(&carriage, bot, bots);
 	
-
-
-/*******************************************************************************/
-	//	print map
- // 	int i = -1;
-	// while (++i < MEM_SIZE)
-	// {
-	// 	if (g_map[i])
-	// 		printf("\033[92m%0.2x\033[0m ", g_map[i]);
-	// 	else
-	// 		printf("\033[90m00\033[0m ");
-	// }
-	// printf("\n");
-/*******************************************************************************/
-	int j = bot[0].size;
-	printf("size = %d ", j);
-	initscr();
 	
-	//raw();
-	start_color();
-	//init_pair(1, 3, 0); //Yellow, 11 bkgd
-	// init_pair(1, 2, 0); // Green, 10 bkgd
-	// init_pair(1, 4, 0); // Blue 12, 4
-	init_pair(1, 6, 0); // CYAN
-	// init_pair(1, 9, 0); // Red, 9 bkgd
-	init_pair(2, 8, 0); //Bright Black ("Gray")
-	//attron(COLOR_PAIR(1));
-	wresize(stdscr, 74, 192); //set screen size
-	//resizeterm(100, 200);
-	int i = 0;
-	// while (++i < MEM_SIZE)
-	// {
-	// 	if (g_map[i])
-	// 	{
-	// 		attron(COLOR_PAIR(1));
-	// 		printw("%0.2x ", g_map[i]);
-	// 		attroff(COLOR_PAIR(1));
-	// 	}
-	// 	else
-	// 	{
-	// 		attron(COLOR_PAIR(2));
-	// 		printw("00 ");
-	// 		attron(COLOR_PAIR(2));
-	// 	}
-	// }
-	// printf("\n");
+	init_colors();
+	print_map(bot, bots, carriage);
 
-	while (i < MEM_SIZE) // 74 rows and 192 columns
+	while (1)
 	{
-		while (j > 0)
+		int ch = getch();
+		if (ch == 27)
 		{
-			attron(COLOR_PAIR(bot[0].id));
-			printw("%0.2x ", g_map[i++]);
-			attroff(COLOR_PAIR(bot[0].id));
-			j--;
+			endwin();
+			break ;
 		}
-		attron(COLOR_PAIR(2));
-		printw("%0.2x ", g_map[i++]);
-		attron(COLOR_PAIR(2));
 
+		if (ch == 'q')
+		{
+			//g_map[0] += 1;
+			carriage->position += 1;
+			clear();
+			//delay_output(1000);
+			print_map(bot, bots, carriage);
+		}
 	}
-	//printf("\n");
-	int ch = getch(); // 	WHILE NOT 'Q' refresh()
-	//attroff(COLOR_PAIR(1));
 	
-	
-	
-	endwin();
-	// while (1)
-	// 	refresh();
-	//endwin();
 
-	// t_carriage *temp;
 
-	// temp = carriage;
-
+	// t_carriage *temp = carriage;
 	// while (1)
 	// {
 	// 	//printf("%d\n", temp->position);
@@ -186,10 +138,24 @@ int			main(int argc, char **argv)
 	// }
 
 /*******************************************************************************/
+	//	print map
+ // 	int i = -1;
+	// while (++i < MEM_SIZE)
+	// {
+	// 	if (g_map[i])
+	// 		printf("\033[92m%0.2x\033[0m ", g_map[i]);
+	// 	else
+	// 		printf("\033[90m00\033[0m ");
+	// }
+	// printf("\n");
+/*******************************************************************************/
+
+/*******************************************************************************/
 	//print carriage info
 	// while (carriage)
 	// {
-	// 	printf("carriage:    id = %d, pos = %d\n", carriage->player_id, carriage->position);
+	// 	printf("carri: id = %d, pos = %d\n", carriage->player_id, 
+	//	carriage->position);
 	// 	printf("car commnd = %0.2x\n", g_map[carriage->position]);
 	// 	carriage = carriage->next;
 	// }
