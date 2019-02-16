@@ -24,10 +24,12 @@ void		init_colors(void)
 
 void		print_elem(UC elem, int pair)
 {
+
 	attron(COLOR_PAIR(pair));
 	printw("%0.2x", elem);
 	attroff(COLOR_PAIR(pair));
 	printw(" ");
+
 }
 
 int 		check_carri(t_carriage *carriage, int pos)
@@ -44,13 +46,13 @@ int 		check_carri(t_carriage *carriage, int pos)
 	return (0);
 }
 
-void		print_map(t_carriage *carriage, int delay)
+void		print_map(t_carriage *carriage, int delay, int cycles)
 {
 	int j = 0;
 	int i = 0;
 	int car_id;
 
-	printw("delay = %d\n", delay);
+	printw("Cycles/second : %d\n", cycles);
 	while (j < MEM_SIZE)
 	{
 		if ((car_id = check_carri(carriage, j)))
@@ -68,23 +70,37 @@ void	npause(void)
 }
 
 
+void		check_key(int *cycles)
+{
+	int ch;
+
+	ch = getch();
+	if (ch == 'q')
+		*cycles = ((*cycles + 100) > 1000) ? 1000 : *cycles + 100;
+	if (ch == 'w')
+		*cycles = ((*cycles + 10) > 1000) ? 1000 : *cycles + 10;
+	if (ch == 'e')
+		*cycles = ((*cycles + 1) > 1000) ? 1000 : *cycles + 1;
+	if (ch == 'y')
+		*cycles = ((*cycles - 100) < 1) ? 1 : *cycles - 100;
+	if (ch == 't')
+		*cycles = ((*cycles - 10) < 1) ? 1 : *cycles - 10;;
+	if (ch == 'r')
+		*cycles = ((*cycles - 1) < 1) ? 1 : *cycles - 1;
+	if (ch == ' ')
+		npause();
+}
+
 void	visualization(t_carriage *carriage)
 {
 
 	init_colors();
-	int delay = 100000;
-	int ch = getch();
+	int delay = 1000000;
+	int cycles = 10;
 
 	while (1)
 	{
-		ch = getch();
-
-		if (ch == 'q')
-			delay += 1000;
-		if (ch == 'w')
-			delay -= 1000;
-		if (ch == ' ')
-			npause();
+		check_key(&cycles);	
 
 		/* ПРОСТО ТЕСТ ДВИЖЕНИЯ КАРЕТКИ, МОЖНО УБРАТЬ */
 		t_carriage *tmp = carriage;
@@ -99,13 +115,13 @@ void	visualization(t_carriage *carriage)
 
 		erase();
 
-		print_map(carriage, delay);
+		print_map(carriage, delay, cycles);
 		//box(stdscr, 0, 0);
-		mvaddstr(0,0,"");
+		//mvaddstr(0,0,"");
 		wrefresh(stdscr);
 		refresh();
-		usleep(delay);
-		ch = 0;
+		usleep(delay / cycles);
+		
 	}
 	endwin();
 }
