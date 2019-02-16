@@ -16,3 +16,4 @@ size_t		bot_size(unsigned char size [])
 {
 	return ((size[0] << 24) | (size[1] << 16) | (size[2] << 8) | size[3]);
 }
+

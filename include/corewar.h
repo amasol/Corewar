@@ -18,11 +18,15 @@
 # include <stdio.h>
 # include <ncurses.h>
 
-
 #define UC unsigned char
+#define	FNUM 16
+
+
 typedef UC				t_arr __attribute__((vector_size(sizeof(UC) * 3)));
 typedef struct			s_carriage t_carriage;
 typedef struct			s_bot t_bot;
+typedef	struct			s_map t_map;
+
 
 
 /*
@@ -34,11 +38,16 @@ typedef struct			s_func
 	int					command;
 	void				(*fptr)(UC *, t_carriage *);
 }						t_func;
-
-#define	FNUM 16
 extern t_func			g_funclist[FNUM];
-unsigned char			g_map[MEM_SIZE];
 
+
+struct					s_map
+{
+	UC					cell;
+	int					color;
+};
+
+t_map					g_map[MEM_SIZE];
 
 
 struct					s_bot
@@ -96,8 +105,10 @@ size_t          	bot_size(unsigned char size []);
 ** Virtual machine
  */
 
-void		print_map(t_bot bot[], int bots, t_carriage *carriage);
+void		print_map(t_carriage *carriage, int delay);
 void		init_colors();
+void		npause(void);
+void	visualization(t_carriage *carriage);
 
 
 /*

@@ -74,16 +74,31 @@ void	new_carriage(t_carriage **carriage, int pos, int id, int parent)
 void		fill_map(t_carriage **carriage, t_bot bot[], int bots)
 {
 	int i;
+	int j;
+	int size;
 
-	i = -1;
-	ft_bzero(g_map, MEM_SIZE);
-	while (++i < bots)
+	i = 0;
+	j = 0;
+	while (j < MEM_SIZE)
 	{
-		new_carriage(carriage, i * MEM_SIZE / bots, i, -1);
-		ft_memcpy(g_map + i * MEM_SIZE / bots, bot[i].exec_code, bot[i].size);
-		bot[i].position = i * MEM_SIZE / bots;
-	}	
+		if (j == i * MEM_SIZE / bots)
+		{
+			new_carriage(carriage, i * MEM_SIZE / bots, i, -1);
+			size = bot[i].size;
+			while (size-- > 0)
+			{				
+				g_map[j].cell = bot[i].exec_code[bot[i].size - size - 1];
+				g_map[j].color = bot[i].id;
+				j++;
+			}
+			i++;
+		}		
+		g_map[j].cell = 0;
+		g_map[j].color = 10;
+		j++;
+	}
 }
+
 
 
 int			main(int argc, char **argv)
@@ -99,51 +114,15 @@ int			main(int argc, char **argv)
 	fill_map(&carriage, bot, bots);
 	
 	
-	init_colors();
-	print_map(bot, bots, carriage);
-
-	while (1)
-	{
-		int ch = getch();
-		if (ch == 27)
-		{
-			endwin();
-			break ;
-		}
-
-		if (ch == 'q')
-		{
-			//g_map[0] += 1;
-			carriage->position += 1;
-			clear();
-			//delay_output(1000);
-			print_map(bot, bots, carriage);
-		}
-	}
+	visualization(carriage);
 	
-
-
-	// t_carriage *temp = carriage;
-	// while (1)
-	// {
-	// 	//printf("%d\n", temp->position);
-		
-	// 	if (!temp)
-	// 		temp = carriage;
-	// 	printf("%0.2x ", g_map[temp->position]);
-	// 	temp->position += 1;
-	// 	temp = temp->next;
-		
-	// 	//sleep(1);
-	// }
-
 /*******************************************************************************/
 	//	print map
  // 	int i = -1;
 	// while (++i < MEM_SIZE)
 	// {
-	// 	if (g_map[i])
-	// 		printf("\033[92m%0.2x\033[0m ", g_map[i]);
+	// 	if (g_map[i].cell)
+	// 		printf("\033[92m%0.2x\033[0m ", g_map[i].cell);
 	// 	else
 	// 		printf("\033[90m00\033[0m ");
 	// }
