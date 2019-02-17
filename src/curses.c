@@ -18,21 +18,19 @@ void		init_colors(void)
 	init_pair(10, 8, 0); //Bright Black ("Gray")
 	curs_set(0);
 	timeout(0);
-	wresize(stdscr, 74, 192); //set screen size
+	//wresize(stdscr, 74, 192); //set screen size
 	//resizeterm(100, 200);
 }
 
-void		print_elem(UC elem, int pair)
+void		print_elem(UC elem, int pair, WINDOW *w, int x, int y)
 {
-
-	attron(COLOR_PAIR(pair));
-	printw("%0.2x", elem);
-	attroff(COLOR_PAIR(pair));
-	printw(" ");
-
+	wattron(w, COLOR_PAIR(pair));
+	mvwprintw(w, y, x, "%0.2x", elem);
+	wattroff(w, COLOR_PAIR(pair));
+	//wprintw(w, " ");
 }
 
-int 		check_carri(t_carriage *carriage, int pos)
+int 		check_carriage(t_carriage *carriage, int pos)
 {
 	t_carriage *temp;
 
@@ -46,19 +44,31 @@ int 		check_carri(t_carriage *carriage, int pos)
 	return (0);
 }
 
-void		print_map(t_carriage *carriage, int delay, int cycles)
+void		print_map(t_carriage *carriage, int delay, int cycles, WINDOW *w)
 {
-	int j = 0;
 	int i = 0;
 	int car_id;
+	int x = 2;
+	int y = 1;
 
-	printw("Cycles/second : %d\n", cycles);
-	while (j < MEM_SIZE)
+	while (i < MEM_SIZE)
 	{
-		if ((car_id = check_carri(carriage, j)))
-			print_elem(g_map[j++].cell, car_id + 10); //g_map[j++].color + 10
-		print_elem(g_map[j].cell, g_map[j].color);
-		j++;
+		if ((car_id = check_carriage(carriage, i)))
+			print_elem(g_map[i].cell, car_id + 10, w, x, y); //g_map[i++].color + 10
+		else
+			print_elem(g_map[i].cell, g_map[i].color, w, x ,y);
+		i++;
+		x += 3;
+		if (x >= 192)
+		{
+			x = 2;
+			y += 1;
+		}
+		if (y > 64)
+		{
+			x = 2;
+			y = 1;
+		}
 	}
 }
 
@@ -97,7 +107,11 @@ void	visualization(t_carriage *carriage)
 	init_colors();
 	int delay = 1000000;
 	int cycles = 10;
+	WINDOW *w;
+	WINDOW *info;
 
+	w = newwin(66, 195, 0, 0); 
+	info = newwin(66, 50, 0, 194); 
 	while (1)
 	{
 		check_key(&cycles);	
@@ -112,17 +126,34 @@ void	visualization(t_carriage *carriage)
 			tmp = tmp->next;
 		}
 		/**********************************************/
+		
+		werase(w);
+		werase(info);
 
-		erase();
+		print_map(carriage, delay, cycles, w);
 
-		print_map(carriage, delay, cycles);
-		//box(stdscr, 0, 0);
-		//mvaddstr(0,0,"");
-		wrefresh(stdscr);
-		refresh();
+		mvwprintw(info, 1, 3, "Cycles/second : %d\n", cycles);
+		mvwprintw(info, 3, 3, "'q' : +100\n");
+		mvwprintw(info, 4, 3, "'w' : +10\n");
+		mvwprintw(info, 5, 3, "'e' : +1\n");
+		mvwprintw(info, 7, 3, "'r' : -1\n");
+		mvwprintw(info, 8, 3, "'t' : -10\n");
+		mvwprintw(info, 9, 3, "'y' : -100\n");
+
+		wattron(w, COLOR_PAIR(10));
+		wattron(info, COLOR_PAIR(10));
+		box(w, 0, 0);
+		box(info, 0, 0);
+		wattroff(w, COLOR_PAIR(10));
+		wattroff(info, COLOR_PAIR(10));
+
+		wrefresh(w);
+		wrefresh(info);
 		usleep(delay / cycles);
 		
 	}
+	delwin(w);
+	delwin(info);
 	endwin();
 }
 

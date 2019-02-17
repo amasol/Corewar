@@ -105,7 +105,7 @@ size_t          	bot_size(unsigned char size []);
 ** Virtual machine
  */
 
-void		print_map(t_carriage *carriage, int delay, int cycles);
+void		print_map(t_carriage *carriage, int delay, int cycles, WINDOW *w);
 void		init_colors();
 void		npause(void);
 void		visualization(t_carriage *carriage);
