@@ -71,7 +71,7 @@ void	new_carriage(t_carriage **carriage, int pos, int id, int parent)
 	}
 }
 
-void		fill_map(t_carriage **carriage, t_bot bot[], int bots)
+void		fill_map(t_carriage **carriage, t_bot bot[])
 {
 	int i;
 	int j;
@@ -81,20 +81,20 @@ void		fill_map(t_carriage **carriage, t_bot bot[], int bots)
 	j = 0;
 	while (j < MEM_SIZE)
 	{
-		if (j == i * MEM_SIZE / bots)
+		if (j == i * MEM_SIZE / g_base->bots)
 		{
-			new_carriage(carriage, i * MEM_SIZE / bots, i, -1);
+			new_carriage(carriage, i * MEM_SIZE / g_base->bots, i, -1);
 			size = bot[i].size;
 			while (size-- > 0)
 			{				
-				g_map[j].cell = bot[i].exec_code[bot[i].size - size - 1];
-				g_map[j].color = bot[i].id;
+				g_base->map[j].cell = bot[i].exec_code[bot[i].size - size - 1];
+				g_base->map[j].color = bot[i].id;
 				j++;
 			}
 			i++;
 		}		
-		g_map[j].cell = 0;
-		g_map[j].color = 10;
+		g_base->map[j].cell = 0;
+		g_base->map[j].color = 10;
 		j++;
 	}
 }
@@ -103,18 +103,46 @@ void		fill_map(t_carriage **carriage, t_bot bot[], int bots)
 
 int			main(int argc, char **argv)
 {
-	int 		bots;
 	t_bot		bot[4];
 	t_carriage	*carriage;
 
 	if (argc >= 6)
 		ft_error("Too many arguments");
 	carriage = NULL;
-	bots = parse_args(argc, argv, &(*bot), 1);
-	fill_map(&carriage, bot, bots);
+
+	g_base = malloc(sizeof(t_base));
+	g_base->bots = parse_args(argc, argv, &(*bot), 1);
+	g_base->bot = bot;
+	fill_map(&carriage, bot);
 	
-	
-	visualization(carriage);
+	//if visualization flag
+		visualization_init();
+
+	while (42) //while (cycle_to_die > 0)
+	{
+		visualization(carriage);
+		/* ПРОСТО ТЕСТ ДВИЖЕНИЯ КАРЕТКИ, МОЖНО УБРАТЬ */
+		t_carriage *tmp = carriage;
+		while (tmp)
+		{
+			
+			tmp->position += 1;
+			if (tmp->position == MEM_SIZE)
+				tmp->position = 0;
+			tmp = tmp->next;
+		}
+		/**********************************************/
+
+	}
+
+	// эти функции очищают память окна визуалиции и закрывают его.
+	// выполнить только после выхода из окна CRTL + C
+	// придумать как это правильно обработать, 
+	// после окнчания цикла cycle_to_die они завершатся автоматически
+	// ВЫПОЛНИТЬ ТОЛЬКО ЕСЛИ ИНИЦИАЛИЗИРОВАНА ВИЗУАЛИЗАЦИЯ
+	delwin(g_base->w);
+	delwin(g_base->info);
+	endwin();
 	
 /*******************************************************************************/
 	//	print map

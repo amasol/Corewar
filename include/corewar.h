@@ -26,6 +26,7 @@ typedef UC				t_arr __attribute__((vector_size(sizeof(UC) * 3)));
 typedef struct			s_carriage t_carriage;
 typedef struct			s_bot t_bot;
 typedef	struct			s_map t_map;
+typedef	struct			s_base t_base;
 
 
 
@@ -47,8 +48,20 @@ struct					s_map
 	int					color;
 };
 
-t_map					g_map[MEM_SIZE];
+struct			 		s_base
+{
+	WINDOW				*w;
+	WINDOW				*info;
+	t_map				map[MEM_SIZE];
+	t_bot				*bot;
 
+	int					delay;
+	int					cycles;
+	int					bots;
+	int					running;
+};
+
+t_base					*g_base;
 
 struct					s_bot
 {
@@ -105,11 +118,17 @@ size_t          	bot_size(unsigned char size []);
 ** Virtual machine
  */
 
-void		print_map(t_carriage *carriage, int delay, int cycles, WINDOW *w);
+void		print_map(t_carriage *carriage);
 void		init_colors();
 void		npause(void);
 void		visualization(t_carriage *carriage);
-
+void		visualization_init(void);
+void	print_bots(void);
+void	print_duck(void);
+void	print_info(void);
+void	print_run(void);
+void	print_info_table(void);
+int		check_key(int ch, int check);
 
 /*
 ** Functions
