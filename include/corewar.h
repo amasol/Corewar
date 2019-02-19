@@ -17,9 +17,13 @@
 # include "op.h"
 # include <stdio.h>
 # include <ncurses.h>
+# include <SDL2/SDL.h>
+# include <SDL2/SDL_mixer.h>
+
 
 #define UC unsigned char
 #define	FNUM 16
+#define MUS_PATH "starwars.mp3"
 
 
 typedef UC				t_arr __attribute__((vector_size(sizeof(UC) * 3)));
@@ -27,7 +31,6 @@ typedef struct			s_carriage t_carriage;
 typedef struct			s_bot t_bot;
 typedef	struct			s_map t_map;
 typedef	struct			s_base t_base;
-
 
 
 /*
@@ -52,8 +55,12 @@ struct			 		s_base
 {
 	WINDOW				*w;
 	WINDOW				*info;
+
+	Mix_Music			*music;
+	int					music_init; // 1 OK (play), 0 - ERROR OR OFF
+
 	t_map				map[MEM_SIZE];
-	t_bot				*bot;
+	t_bot				*bot; // t_bot	bot[4] POINTER
 
 	int					delay;
 	int					cycles;
@@ -66,7 +73,7 @@ t_base					*g_base;
 struct					s_bot
 {
 	int					id;
-	int					position;
+	//int					position;
 	unsigned char 		m_header[4];
 	unsigned char 		b_comment[2048];
 	unsigned char 		bot_name[PROG_NAME_LENGTH];
@@ -129,6 +136,8 @@ void	print_info(void);
 void	print_run(void);
 void	print_info_table(void);
 int		check_key(int ch, int check);
+
+void		sdl_mixer_init(void);
 
 /*
 ** Functions

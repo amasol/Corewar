@@ -21,7 +21,7 @@ $(OBJDIR):
 	@mkdir -p $@
 
 $(NAME): $(addprefix $(OBJDIR)/, $(OBJ)) $(LIBFT)
-	@$(CC) $(CFLAGS) $^ -o $@ -lncurses
+	@$(CC) $(CFLAGS) $^ -o $@ -lncurses -lSDL -lSDL_mixer
 	@echo ""
 	@echo "-----------------------------------"
 	@echo "Corewar is ready to work"

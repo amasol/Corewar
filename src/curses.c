@@ -20,7 +20,7 @@ void		init_colors(void)
 	init_pair(23, 15, 4); // live 3
 	init_pair(24, 15, 9); // live 4
 
-	init_pair(30, 6, 0); // CYAN
+	//init_pair(30, 6, 0); // CYAN
 	init_pair(10, 8, 0); //Bright Black ("Gray")
 }
 
@@ -72,18 +72,24 @@ void	npause(void)
 {
 	g_base->running = 0;
 
+	Mix_PauseMusic();
 	while (1)
 	{
 		werase(g_base->info);
 		wattron(g_base->info, COLOR_PAIR(4));
 		wattron(g_base->info, A_BLINK);
 		mvwprintw(g_base->info, 1, 3, "STOPED\n");
+		if (g_base->music_init == 1)
+			mvwprintw(g_base->info, 1, 30, "MUSIC: Stoped\n");
 		wattroff(g_base->info, COLOR_PAIR(4));
 		wattroff(g_base->info, A_BLINK);
+		if (g_base->music_init == 0)
+			mvwprintw(g_base->info, 1, 30, "MUSIC: OFF\n");
 		print_info_table();
 		wrefresh(g_base->info);
 		if (check_key(getch(), 0) == ' ')
 		{
+			Mix_ResumeMusic();
 			g_base->running = 1;
 			return ;
 		}
@@ -112,12 +118,30 @@ int		check_key(int ch, int check)
 		g_base->cycles = 10;
 	if (check && ch == ' ')
 		npause();
+	if (!g_base->music_init && ch == 'm')
+		sdl_mixer_init();
 	return ch;
+}
+
+void		sdl_mixer_init(void)
+{
+	g_base->music = NULL;
+	g_base->music_init = 1;
+	if (SDL_Init(SDL_INIT_AUDIO) < 0)
+		g_base->music_init = 0;
+	if (Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 2, 4096) == -1)
+		g_base->music_init = 0;
+	g_base->music = Mix_LoadMUS(MUS_PATH);
+	if (g_base->music == NULL)
+		g_base->music_init = 0;
+	if (Mix_PlayMusic(g_base->music, -1) == -1)
+		g_base->music_init = 0;
 }
 
 void	visualization_init(void)
 {
 	init_colors();
+	Mix_PlayingMusic();
 	g_base->w = newwin(66, 195, 0, 0);
 	g_base->info = newwin(66, 50, 0, 194);
 	g_base->delay = 1000000;
@@ -154,7 +178,11 @@ void	print_run(void)
 	{
 		wattron(g_base->info, COLOR_PAIR(2));
 		mvwprintw(g_base->info, 1, 3, "RUNING\n");
+		if (g_base->music_init == 1)
+			mvwprintw(g_base->info, 1, 30, "MUSIC: Play\n");
 		wattroff(g_base->info, COLOR_PAIR(2));
+		if (g_base->music_init == 0)
+			mvwprintw(g_base->info, 1, 30, "MUSIC: OFF\n");
 	}
 }
 

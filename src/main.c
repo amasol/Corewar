@@ -117,6 +117,8 @@ int			main(int argc, char **argv)
 	
 	//if visualization flag
 		visualization_init();
+		//if music flag
+			//sdl_mixer_init();
 
 	while (42) //while (cycle_to_die > 0)
 	{
@@ -143,6 +145,11 @@ int			main(int argc, char **argv)
 	delwin(g_base->w);
 	delwin(g_base->info);
 	endwin();
+
+	//функции заверщающие и закрывающие аудио
+	// выполнить только если инициализированно аудио init_sdl_mixer()
+	Mix_FreeMusic(g_base->music);
+	Mix_CloseAudio();
 	
 /*******************************************************************************/
 	//	print map
