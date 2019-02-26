@@ -18,7 +18,7 @@ unsigned int	ft_get_num(t_map *map, int pos, int size)
 	unsigned int res;
 
 	res = 0;
-	// printf("\n",);
+	pos %= MEM_SIZE;
 	while (size > 0)
 	{
 		--size;
