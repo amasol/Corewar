@@ -1,49 +1,62 @@
-.PHONY: all clean fclean
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: bdomansk <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/04/23 11:55:49 by bdomansk          #+#    #+#              #
+#    Updated: 2018/04/23 11:55:51 by bdomansk         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
-NAME = corewar
-CC=clang
-#CFLAGS = -Wall -Wextra -Werror -Iinclude -Ilibft
-LIBFT = libft/libft.a
+NAME = ../corewar
+LIB = ../libft/libft.a
+LIBDIR = ../libft
+FLAGS = -Wall -Wextra -Werror 
+COREWAR_SRC = main.c init_info.c put_manual.c parse_arguments.c reverse.c \
+	print_winner.c is_natural.c check_bot.c error.c fill_map.c draw_map.c \
+	new_carriage.c visualization_init.c check_key.c define_bots_id.c  \
+	draw_info_table.c npause.c introducing_contestants.c sdl_mixer_init.c \
+	print_map.c close_visulization.c perform_carriages.c check_carriages.c \
+	ft_live.c operations.c ft_zjmp.c get_arg_from_map.c check_code_type.c \
+	check_registers.c get_size_by_type.c move_carriage.c ft_add.c ft_sub.c \
+	ft_and.c
+COREWAR_OBJ = $(COREWAR_SRC:.c=.o)
+COREWAR_HEADER = ../includes/corewar.h ../includes/op_corewar.h
+HEADER = -I ../includes
+HEADER += -I ../frameworks/SDL2.framework/Headers/
+HEADER += -I ../frameworks/SDL2_mixer.framework/Headers/ -F ../frameworks
+FRAMEWORKS = -framework SDL2
+FRAMEWORKS += -F  ../frameworks
+FRAMEWORKS += -framework SDL2_mixer 
+FRAMEWORKS += -rpath frameworks
+DEL = /bin/rm -f
 
-SRC = main.c error.c bot_size.c save_bot.c function_check.c ft_add.c\
-      op.c curses.c\
-#      ft_sti.c  ft_and.c  ft_aff.c ft_fork.c ft_ld.c ft_ldi.c \
-#     ft_lfork.c ft_live.c ft_lld.c ft_lldi.c ft_or.c ft_st.c ft_sub.c ft_xor.c \
-#      ft_zjmp.c
-OBJ = $(SRC:.c=.o)
+.PHONY : all clean n fclean re 
 
-OBJDIR=obj
-SRCDIR=src
+all : $(NAME)
 
-all: $(OBJDIR) $(NAME)
+$(NAME) : $(COREWAR_OBJ) $(LIB) 
+	@echo "Compiling corewar"
+	@gcc $(FLAGS) $(COREWAR_OBJ) -o $(NAME) -lncurses $(LIB) $(FRAMEWORKS)
 
-$(OBJDIR):
-	@mkdir -p $@
+$(COREWAR_OBJ): $(COREWAR_SRC) $(COREWAR_HEADER)
+	@echo "Corewar objects creating"
+	@gcc $(FLAGS) -c $(COREWAR_SRC) $(HEADER)
 
-$(NAME): $(addprefix $(OBJDIR)/, $(OBJ)) $(LIBFT)
-	@$(CC) $(CFLAGS) $^ -o $@ -lncurses -lSDL -lSDL_mixer
-	@echo ""
-	@echo "-----------------------------------"
-	@echo "Corewar is ready to work"
 
-$(addprefix $(OBJDIR)/, %.o): $(addprefix $(SRCDIR)/, %.c)
-	@printf "."
-	@$(CC) $(CFLAGS) -c $< -o $@
-
-$(LIBFT):
-	@$(MAKE) --no-print-directory -C libft
+$(LIB) :
+	@make -C $(LIBDIR)
 
 clean:
-	@echo "-----------------------------------"
-	@echo "Objects files are removed"
-	@ /bin/rm -rf $(OBJDIR)
-	@$(MAKE) --no-print-directory -C libft clean
+	@$(DEL) $(COREWAR_OBJ)
+
+n :
+	@norminette $(COREWAR_SRC) 
 
 fclean:
-	@echo "-----------------------------------"
-	@echo "Corewar is deleted"
-	@ /bin/rm -rf $(OBJDIR)
-	@ /bin/rm -f $(NAME)
-	@$(MAKE) --no-print-directory -C libft fclean
-
+	@$(DEL) $(COREWAR_OBJ)
+	@$(DEL) $(NAME)
+	
 re: fclean all
