@@ -1,45 +1,34 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_and.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bdomansk <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/03/05 13:50:55 by bdomansk          #+#    #+#             */
+/*   Updated: 2019/03/05 13:50:56 by bdomansk         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "corewar.h"
 
-extern const t_operations g_operations[16];
-
 void		ft_and(t_vm *vm, t_carriage *carriage)
 {
-	ft_printf("\n\n\n\n\n\n");
-	(void)vm;
-	unsigned int pos;
-	unsigned int num_reg[4];
+	unsigned int	pos;
+	unsigned int	reg_pos;
+	int 			value[2];
 
-
-	// ft_printf("arg_test ->[%d]\n",carriage->arg_type[0]);
-	// ft_printf("arg_test ->[%d]\n",carriage->arg_type[1]);
-	// ft_printf("arg_test ->[%d]\n",carriage->arg_type[2]);
-
-
-	pos = carriage->position;
-	num_reg[1] = (unsigned char)get_arg_from_map(vm->map, pos + 1, 1);
-	num_reg[2] = (unsigned char)get_arg_from_map(vm->map, pos + 2, 1);
-	num_reg[3] = (unsigned char)get_arg_from_map(vm->map, pos + 3, 1);
-	// printf("test_num_teg ->[%d]\n", num_reg[1]);
-	// printf("test_num_teg ->[%d]\n", num_reg[2]);
-	// printf("test_num_teg ->[%d]\n", num_reg[3]);
-
-	carriage->register_id[num_reg[3]] = carriage->register_id[num_reg[1]] & carriage->register_id[num_reg[2]];
-	if (carriage->register_id[num_reg[3]] == 0)
-		carriage->carry = 1;
-	else
-		carriage->carry = 0;
-	printf("test_num_teg ->[%d]\n", carriage->register_id[num_reg[3]]);	
-
-
-	ft_printf("\n\n\n\n\n\n");
+	value[0] = get_arg_by_type(vm, carriage, 0);
+	value[1] = get_arg_by_type(vm, carriage, 1);
+	pos = get_arg_position(carriage, 2);
+	reg_pos = (unsigned char)get_arg_from_map(vm->map, pos, 1);
+	carriage->registers[reg_pos] = value[0] & value[1];
+	carriage->carry = (carriage->registers[reg_pos] == 0) ? 1 : 0;
+	if (!vm->flags->v && vm->flags->ops)
+		ft_printf("P %4d | and %d %d r%d\n",
+		carriage->id, value[0], value[1], reg_pos);
+	move_carriage(carriage);
 }
-
-
-// посмотреть уточнение за carry в таблице 
-
-// достать три аргумента 
-// |T_REG / T_DIR / T_IND 	|	T_REG / T_DIR / T_IND   |	T_REG
 
 /*
 Выполняет операцию «побитовое И» для значений первых двух аргументов 
