@@ -1,0 +1,16 @@
+usage:	./coreawar [-hmlcv] [-dump[64|32] N] [-s N] [-n N] <champ1.cor> [-n N] <champ2.cor> ...
+	-h	: see the usage
+	-m	: turn on musical accompaniment
+	-l	: show leaks
+	-c	: enable colors
+	-v	: enable visualization
+	-dump N	: dumps memory after N cycles then exits (64 or 32 octets per line)
+	-n N	: set number of player(champ) to N
+	-s N	: show verbosity levels, can be added together to enable several
+
+		- 0	: show only essentials
+		- 1	: show lives
+		- 2	: show cycles
+		- 4	: show operations (Params are NOT litteral ...)
+		- 8	: show deaths
+		- 16	: show PC movements (Except for jumps)
